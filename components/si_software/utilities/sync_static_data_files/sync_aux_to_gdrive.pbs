@@ -1,0 +1,10 @@
+#!/bin/bash
+#PBS -N aux2gdrive
+#PBS -l select=1:ncpus=1:mem=5000mb:os=rh7
+#PBS -l walltime=100:00:00
+
+
+
+rclone sync /work/ALT/swot/aval/neige/cosims-bucketmirror/foo/si_software gdrive:foo/si_software --checksum -v
+rclone sync /work/ALT/swot/aval/neige/cosims-bucketmirror/hidden_value gdrive:hidden_value --checksum -v
+

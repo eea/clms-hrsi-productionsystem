@@ -1,0 +1,89 @@
+FROM continuumio/miniconda3 AS base
+MAINTAINER Rémi Jugier "remi.jugier@magellium.fr"
+
+ENV LANG C.UTF-8
+ENV LC_ALL C.UTF-8
+
+RUN ulimit -s unlimited
+
+#install libraries
+RUN apt-get -q update \
+    && apt-get -q -y install build-essential tar file apt-utils pkg-config cmake unzip git wget curl  \
+    && apt-get -q clean \
+    && rm -rf /var/lib/apt/lists/*
+
+#CONDA
+#remove defaults channel from conda
+RUN conda config --remove channels defaults; conda config --append channels conda-forge/label/dev
+# installs for si_software
+RUN conda install -y -c conda-forge python=3.7 numpy scipy gdal rasterio shapely pyproj fiona pyyaml lxml requests pytz python-dateutil kombu descartes pillow tqdm
+# installs for ICE : ice_env
+RUN conda create -y -n ice_env -c conda-forge python=3.7 numpy gdal=2.4 pyproj pillow lxml tqdm
+#clean conda
+RUN conda clean --all -y
+
+#install rclone
+RUN curl --silent --remote-name  https://downloads.rclone.org/v1.50.2/rclone-v1.50.2-linux-amd64.zip; \
+    unzip rclone-v1.50.2-linux-amd64.zip; \
+    mv rclone-v1.50.2-linux-amd64/rclone /usr/local/bin/; \
+    rm -Rf rclone-v1.50.2-linux-amd64*
+
+#create necessary directories
+RUN mkdir src install work
+
+#install programs from source
+COPY rename_decompress.py /src/
+WORKDIR /src
+
+
+##############################
+#install SNAP
+COPY protoimage_otb_snap/esa-snap_sentinel_unix_8_0.sh /src/
+RUN bash esa-snap_sentinel_unix_8_0.sh -q -dir /install/snap
+RUN /install/snap/bin/gpt 2>/dev/null 1>/dev/null
+RUN rm -f esa-snap_sentinel_unix_8_0.sh
+ENV LD_LIBRARY_PATH=.:${LD_LIBRARY_PATH}
+RUN wget http://step.esa.int/auxdata/dem/egm96/ww15mgh_b.zip -O ww15mgh_b.zip; \
+    mkdir -p /root/.snap/auxdata/dem/egm96/; \
+    mv ww15mgh_b.zip /root/.snap/auxdata/dem/egm96/
+##############################
+
+
+
+##############################
+#ICE
+#install ICE (simple copy)
+COPY csi_processing_chain_softwares/ProcessRiverIce.tar.gz /src/
+RUN ./rename_decompress.py processriverice --output_path=/install/ice
+RUN chmod u+x /install/ice/ProcessRiverIce
+RUN mv /install/ice/classifiers /root/.snap/auxdata/classifiers
+ENV PATH=/install/snap/bin:$PATH
+ENV PATH=/install/ice:$PATH
+##############################
+
+
+
+##############################
+#csi_si_software
+COPY csi_si_software_part2.tar.gz /src/
+RUN ./rename_decompress.py csi_si_software_part2 --output_path=/install/cosims_python/cosims
+
+# Add the CoSIMS Python components to the PYTHONPATH env var and programs to the PATH env var
+ENV PYTHONPATH=/install/cosims_python/cosims/components/si_software/python:/install/cosims_python:${PYTHONPATH}
+ENV PATH=/install/cosims_python/cosims/components/si_software/python/si_software:$PATH
+ENV PATH=/install/cosims_python/cosims/components/si_software/python/si_software/standalone:$PATH
+ENV PATH=/install/cosims_python/cosims/components/si_software/python/si_software_part2:$PATH
+ENV PATH=/install/cosims_python/cosims/components/si_software/python/product_request_and_download:$PATH
+##############################
+
+
+#go to empty work directory
+WORKDIR /work
+
+#delete src dir
+RUN rm -R /src
+
+
+
+
+

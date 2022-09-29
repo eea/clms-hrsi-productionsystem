@@ -1,0 +1,8 @@
+#!/bin/bash
+#PBS -N aux2dias
+#PBS -l select=1:ncpus=1:mem=5000mb:os=rh7
+#PBS -l walltime=100:00:00
+
+rclone sync /work/ALT/swot/aval/neige/cosims-bucketmirror/foo/si_software bar:foo/si_software --checksum -v
+rclone sync /work/ALT/swot/aval/neige/cosims-bucketmirror/hidden_value bar:hidden_value --checksum -v
+

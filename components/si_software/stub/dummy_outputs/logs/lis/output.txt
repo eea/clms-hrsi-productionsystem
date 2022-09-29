@@ -1,0 +1,154 @@
+2019-09-06 14:01:43,755 - build_json.py:320 - INFO - THEIA Sentinel product detected.
+
+2019-09-06 14:01:43,760 - build_json.py:226 - WARNING - No DEM found within product!
+
+2019-09-06 14:01:43,761 - build_json.py:366 - WARNING - Using optional external DEM!
+
+2019-09-06 14:01:45 (INFO): No kwl metadata found in file /temp_20190906T133104U140517/maja/out/SENTINEL2A_20180614-103021-462_L2A_T32TLR_C_V1-0/MASKS/SENTINEL2A_20180614-103021-462_L2A_T32TLR_C_V1-0_MG2_R2.tif
+
+2019-09-06 14:01:45 (INFO): Estimated memory for full processing: 402.404MB (avail.: 1024 MB), optimal image partitioning: 1 blocks
+
+2019-09-06 14:01:45 (INFO): File /temp_20190906T133104U140517/lis/out/bad_slope_correction_mask.tif will be written in 1 blocks of 5490x5490 pixels
+
+2019-09-06 14:02:53 (INFO): No kwl metadata found in file /temp_20190906T133104U140517/lis/out/lis.vrt
+
+2019-09-06 14:02:53 (INFO): Estimated memory for full processing: 1034.74MB (avail.: 1024 MB), optimal image partitioning: 2 blocks
+
+2019-09-06 14:02:53 (INFO): File /temp_20190906T133104U140517/lis/out/nodata_mask.tif will be written in 4 blocks of 3200x3200 pixels
+
+2019-09-06 14:03:09 (INFO): No kwl metadata found in file /temp_20190906T133104U140517/maja/out/SENTINEL2A_20180614-103021-462_L2A_T32TLR_C_V1-0/MASKS/SENTINEL2A_20180614-103021-462_L2A_T32TLR_C_V1-0_CLM_R2.tif
+
+2019-09-06 14:03:09 (INFO): Estimated memory for full processing: 402.404MB (avail.: 1024 MB), optimal image partitioning: 1 blocks
+
+2019-09-06 14:03:09 (INFO): File /temp_20190906T133104U140517/lis/out/all_cloud_mask.tif will be written in 1 blocks of 5490x5490 pixels
+
+2019-09-06 14:03:10 (INFO): No kwl metadata found in file /temp_20190906T133104U140517/maja/out/SENTINEL2A_20180614-103021-462_L2A_T32TLR_C_V1-0/MASKS/SENTINEL2A_20180614-103021-462_L2A_T32TLR_C_V1-0_CLM_R2.tif
+
+2019-09-06 14:03:10 (INFO): Estimated memory for full processing: 143.71MB (avail.: 1024 MB), optimal image partitioning: 1 blocks
+
+2019-09-06 14:03:10 (INFO): File /temp_20190906T133104U140517/lis/out/shadow_in_mask.tif will be written in 1 blocks of 5490x5490 pixels
+
+2019-09-06 14:03:12 (INFO): No kwl metadata found in file /temp_20190906T133104U140517/maja/out/SENTINEL2A_20180614-103021-462_L2A_T32TLR_C_V1-0/MASKS/SENTINEL2A_20180614-103021-462_L2A_T32TLR_C_V1-0_CLM_R2.tif
+
+2019-09-06 14:03:12 (INFO): Estimated memory for full processing: 143.71MB (avail.: 1024 MB), optimal image partitioning: 1 blocks
+
+2019-09-06 14:03:12 (INFO): File /temp_20190906T133104U140517/lis/out/shadow_out_mask.tif will be written in 1 blocks of 5490x5490 pixels
+
+2019-09-06 14:03:14 (INFO): No kwl metadata found in file /temp_20190906T133104U140517/lis/out/shadow_in_mask.tif
+
+2019-09-06 14:03:14 (INFO): No kwl metadata found in file /temp_20190906T133104U140517/lis/out/shadow_out_mask.tif
+
+2019-09-06 14:03:14 (INFO): Estimated memory for full processing: 632.355MB (avail.: 1024 MB), optimal image partitioning: 1 blocks
+
+2019-09-06 14:03:14 (INFO): File /temp_20190906T133104U140517/lis/out/shadow_mask.tif will be written in 1 blocks of 5490x5490 pixels
+
+2019-09-06 14:03:15 (INFO): No kwl metadata found in file /temp_20190906T133104U140517/maja/out/SENTINEL2A_20180614-103021-462_L2A_T32TLR_C_V1-0/MASKS/SENTINEL2A_20180614-103021-462_L2A_T32TLR_C_V1-0_CLM_R2.tif
+
+2019-09-06 14:03:15 (INFO): Estimated memory for full processing: 143.71MB (avail.: 1024 MB), optimal image partitioning: 1 blocks
+
+2019-09-06 14:03:15 (INFO): File /temp_20190906T133104U140517/lis/out/high_cloud_mask.tif will be written in 1 blocks of 5490x5490 pixels
+
+2019-09-06 14:03:17 (INFO): No kwl metadata found in file /temp_20190906T133104U140517/maja/out/SENTINEL2A_20180614-103021-462_L2A_T32TLR_C_V1-0/MASKS/SENTINEL2A_20180614-103021-462_L2A_T32TLR_C_V1-0_CLM_R2.tif
+
+2019-09-06 14:03:17 (INFO): No kwl metadata found in file /temp_20190906T133104U140517/lis/out/red.tif
+
+2019-09-06 14:03:17 (INFO): Estimated memory for full processing: 632.355MB (avail.: 1024 MB), optimal image partitioning: 1 blocks
+
+2019-09-06 14:03:17 (INFO): File /temp_20190906T133104U140517/lis/out/mask_backtocloud.tif will be written in 1 blocks of 5490x5490 pixels
+
+2019-09-06 14:03:19 (INFO): No kwl metadata found in file /temp_20190906T133104U140517/lis/out/lis.vrt
+
+2019-09-06 14:03:19 (INFO): No kwl metadata found in file /temp_20190906T133104U140517/lis/out/all_cloud_mask.tif
+
+2019-09-06 14:03:19 (INFO): Estimated memory for full processing: 1092.26MB (avail.: 1024 MB), optimal image partitioning: 2 blocks
+
+2019-09-06 14:03:19 (INFO): File /temp_20190906T133104U140517/lis/out/pass1.tif will be written in 4 blocks of 3200x3200 pixels
+
+2019-09-06 14:03:29 (INFO): No kwl metadata found in file /temp_20190906T133104U140517/lis/out/all_cloud_mask.tif
+
+2019-09-06 14:03:29 (INFO): No kwl metadata found in file /temp_20190906T133104U140517/lis/out/shadow_mask.tif
+
+2019-09-06 14:03:29 (INFO): No kwl metadata found in file /temp_20190906T133104U140517/lis/out/red_nn.tif
+
+2019-09-06 14:03:29 (INFO): No kwl metadata found in file /temp_20190906T133104U140517/lis/out/high_cloud_mask.tif
+
+2019-09-06 14:03:29 (INFO): No kwl metadata found in file /temp_20190906T133104U140517/lis/out/cloud_pass1.tif
+
+2019-09-06 14:03:29 (INFO): Estimated memory for full processing: 1322.21MB (avail.: 1024 MB), optimal image partitioning: 2 blocks
+
+2019-09-06 14:03:29 (INFO): File /temp_20190906T133104U140517/lis/out/cloud_refine.tif will be written in 3 blocks of 5490x1837 pixels
+
+2019-09-06 14:03:32 (INFO): No kwl metadata found in file /work/dtm/S2__TEST_AUX_REFDE2_T32TLR_0001/S2__TEST_AUX_REFDE2_T32TLR_0001.DBL.DIR/S2__TEST_AUX_REFDE2_T32TLR_0001_ALT_R2.TIF
+
+2019-09-06 14:03:32 (INFO): Estimation will be performed in 549 blocks of 5490x10 pixels
+
+2019-09-06 14:03:33 (INFO): No kwl metadata found in file /temp_20190906T133104U140517/lis/out/pass1.tif
+
+2019-09-06 14:03:33 (INFO): No kwl metadata found in file /temp_20190906T133104U140517/lis/out/cloud_pass1.tif
+
+Find snow fraction candidate in bin number 20.
+
+Corresponds to an altitude at the bin center of: 2228.11962890625 meters.
+
+2019-09-06 14:03:37 (INFO): No kwl metadata found in file /temp_20190906T133104U140517/lis/out/lis.vrt
+
+2019-09-06 14:03:37 (INFO): No kwl metadata found in file /work/dtm/S2__TEST_AUX_REFDE2_T32TLR_0001/S2__TEST_AUX_REFDE2_T32TLR_0001.DBL.DIR/S2__TEST_AUX_REFDE2_T32TLR_0001_ALT_R2.TIF
+
+2019-09-06 14:03:37 (INFO): No kwl metadata found in file /temp_20190906T133104U140517/lis/out/cloud_refine.tif
+
+2019-09-06 14:03:37 (INFO): Estimated memory for full processing: 1322.21MB (avail.: 1024 MB), optimal image partitioning: 2 blocks
+
+2019-09-06 14:03:37 (INFO): File /temp_20190906T133104U140517/lis/out/pass2.tif will be written in 4 blocks of 3200x3200 pixels
+
+2019-09-06 14:03:48 (INFO): No kwl metadata found in file /temp_20190906T133104U140517/lis/out/pass1.tif
+
+2019-09-06 14:03:48 (INFO): No kwl metadata found in file /temp_20190906T133104U140517/lis/out/pass2.tif
+
+2019-09-06 14:03:48 (INFO): Estimated memory for full processing: 632.355MB (avail.: 1024 MB), optimal image partitioning: 1 blocks
+
+2019-09-06 14:03:48 (INFO): File /temp_20190906T133104U140517/lis/out/pass3.tif will be written in 1 blocks of 5490x5490 pixels
+
+2019-09-06 14:03:50 (INFO): No kwl metadata found in file /temp_20190906T133104U140517/lis/out/cloud_refine.tif
+
+2019-09-06 14:03:50 (INFO): No kwl metadata found in file /temp_20190906T133104U140517/lis/out/pass3.tif
+
+2019-09-06 14:03:50 (INFO): No kwl metadata found in file /temp_20190906T133104U140517/lis/out/mask_backtocloud.tif
+
+2019-09-06 14:03:50 (INFO): Estimated memory for full processing: 862.306MB (avail.: 1024 MB), optimal image partitioning: 1 blocks
+
+2019-09-06 14:03:50 (INFO): File /temp_20190906T133104U140517/lis/out/LIS_PRODUCTS/LIS_SEB.TIF will be written in 1 blocks of 5490x5490 pixels
+
+2019-09-06 14:03:52 (INFO): No kwl metadata found in file /temp_20190906T133104U140517/lis/out/LIS_PRODUCTS/LIS_SEB.TIF
+
+2019-09-06 14:03:52 (INFO): No kwl metadata found in file /temp_20190906T133104U140517/lis/out/nodata_mask.tif
+
+2019-09-06 14:03:52 (INFO): Estimated memory for full processing: 632.355MB (avail.: 1024 MB), optimal image partitioning: 1 blocks
+
+2019-09-06 14:03:52 (INFO): File /temp_20190906T133104U140517/lis/out/LIS_PRODUCTS/LIS_SEB.TIF will be written in 1 blocks of 5490x5490 pixels
+
+2019-09-06 14:03:54 (INFO): No kwl metadata found in file /temp_20190906T133104U140517/lis/out/pass1.tif
+
+2019-09-06 14:03:54 (INFO): No kwl metadata found in file /temp_20190906T133104U140517/lis/out/pass2.tif
+
+2019-09-06 14:03:54 (INFO): No kwl metadata found in file /temp_20190906T133104U140517/lis/out/cloud_pass1.tif
+
+2019-09-06 14:03:54 (INFO): No kwl metadata found in file /temp_20190906T133104U140517/lis/out/cloud_refine.tif
+
+2019-09-06 14:03:54 (INFO): No kwl metadata found in file /temp_20190906T133104U140517/lis/out/all_cloud_mask.tif
+
+2019-09-06 14:03:54 (INFO): No kwl metadata found in file /temp_20190906T133104U140517/lis/out/bad_slope_correction_mask.tif
+
+2019-09-06 14:03:54 (INFO): Estimated memory for full processing: 258.685MB (avail.: 1024 MB), optimal image partitioning: 1 blocks
+
+2019-09-06 14:03:54 (INFO): File /temp_20190906T133104U140517/lis/out/LIS_PRODUCTS/LIS_SNOW_ALL.TIF will be written in 1 blocks of 5490x5490 pixels
+
+2019-09-06 14:04:04 (INFO): No kwl metadata found in file /temp_20190906T133104U140517/lis/out/LIS_PRODUCTS/LIS_SEB.TIF
+
+2019-09-06 14:04:04 (INFO): No kwl metadata found in file /temp_20190906T133104U140517/lis/out/LIS_PRODUCTS/LIS_SEB.TIF
+
+2019-09-06 14:04:04 (INFO): No kwl metadata found in file /temp_20190906T133104U140517/lis/out/LIS_PRODUCTS/LIS_COMPO.TIF
+
+2019-09-06 14:04:04 (INFO): Estimated memory for full processing: 347629MB (avail.: 1024 MB), optimal image partitioning: 340 blocks
+
+2019-09-06 14:04:04 (INFO): File /temp_20190906T133104U140517/lis/out/LIS_PRODUCTS/LIS_COMPO.TIF will be written in 323 blocks of 5490x17 pixels
+

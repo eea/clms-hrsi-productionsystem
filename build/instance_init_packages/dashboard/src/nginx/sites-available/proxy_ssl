@@ -1,0 +1,27 @@
+map $http_upgrade $connection_upgrade {
+    default upgrade;
+    ''      close;
+}
+
+server {
+	include "/etc/nginx/snippets/common.conf";
+	server_name nomad.cosims.magellium.fr nomad.bar.magellium.fr;
+	location / {
+		include "/etc/nginx/snippets/options-proxypass.conf";
+		proxy_pass http://CSI_NOMAD_SERVER_IP:4646;
+	}
+}
+server {
+	include "/etc/nginx/snippets/common.conf";
+	server_name dashboard.cosims.magellium.fr dashboard.bar.magellium.fr;
+	resolver 127.0.0.53;
+	location /nomad/ {
+		include "/etc/nginx/snippets/options-proxypass.conf";
+		proxy_pass http://CSI_NOMAD_SERVER_IP:4646/;
+	}
+	location /api/ {
+		include "/etc/nginx/snippets/options-proxypass.conf";
+		proxy_pass http://CSI_HTTP_API_INSTANCE_IP:3000/;
+	}
+}
+

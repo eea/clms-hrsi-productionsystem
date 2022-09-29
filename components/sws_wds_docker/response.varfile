@@ -1,0 +1,22 @@
+# install4j response file for ESA SNAP
+createDesktopLinkAction$Boolean=false
+deleteSnapDir=DESKTOP
+executeLauncherWithPythonAction$Boolean=true
+extendPathEnvVar$Boolean=true
+forcePython$Boolean=true
+pythonExecutable=/usr/bin/python3
+sys.adminRights$Boolean=true
+sys.component.3109$Boolean=false
+sys.component.RSTB$Boolean=false
+sys.component.S1TBX$Boolean=true
+sys.component.S2TBX$Boolean=false
+sys.component.S3TBX$Boolean=false
+sys.component.SMOS$Boolean=false
+sys.component.SNAP$Boolean=false
+sys.fileAssociation.extensions$StringArray="snap","dim"
+sys.fileAssociation.launchers$StringArray="656","656"
+sys.installationDir=/install/snap
+sys.languageId=en
+sys.programGroupAllUsers$Boolean=true
+sys.programGroupDisabled$Boolean=false
+sys.programGroupName=ESA SNAP

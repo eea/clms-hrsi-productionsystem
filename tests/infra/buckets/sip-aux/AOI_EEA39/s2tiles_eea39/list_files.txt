@@ -1,0 +1,7 @@
+./s2tiles_eea39.prj
+./s2tiles_eea39.shx
+./s2tiles_eea39.dbf
+./list_files.txt
+./s2tiles_eea39.shp
+./s2tiles_eea39_gdal_info.json
+./s2tiles_eea39.cpg

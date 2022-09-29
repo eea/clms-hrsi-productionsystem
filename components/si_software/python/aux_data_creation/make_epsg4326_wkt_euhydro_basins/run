@@ -1,0 +1,4 @@
+./gen_epsg4326_wkt_euhydro_basins.py \
+    --input_shp path_to/hidden_value/eu_hydro_merged_shapefiles/eu_hydro_riverbasins.shp \
+    --output_json euhydro_basins.json
+    

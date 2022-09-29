@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="DISPLAY/display.xsl"?>
+<Earth_Explorer_Header schema_version="1.00" xmlns="http://eop-cfi.esa.int/CFI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://eop-cfi.esa.int/CFI ./LUTANX_AnnexLUT.xsd" xsi:type="LUTANX_Header_Type">
+    <Fixed_Header>
+        <File_Name>LTC</File_Name>
+        <File_Description>AnnexLUT</File_Description>
+        <Notes>L2 note</Notes>
+        <Mission>SENTINEL-2B</Mission>
+        <File_Class>OPER</File_Class>
+        <File_Type>NOT_INITIALIZED</File_Type>
+        <Validity_Period>
+            <Validity_Start>UTC=2020-02-09T12:30:57</Validity_Start>
+            <Validity_Stop>UTC=2020-02-09T10:31:00</Validity_Stop>
+        </Validity_Period>
+        <File_Version>0001</File_Version>
+        <Source>
+            <System>MAJA</System>
+            <Creator>MAJA_L2_NOMINAL_CHAIN</Creator>
+            <Creator_Version>3.3.0</Creator_Version>
+            <Creation_Date>UTC=2020-02-11T09:48:30</Creation_Date>
+        </Source>
+    </Fixed_Header>
+    <Variable_Header>
+        <Main_Product_Header>
+            <List_of_Consumers count="0" />
+            <List_of_Extensions count="0" />
+        </Main_Product_Header>
+        <Specific_Product_Header>
+            <Instance_Id>
+                <Reference_Product_Semantic>L2VALD</Reference_Product_Semantic>
+                <Reference_Product_Instance></Reference_Product_Instance>
+                <Annex_Code>LTC</Annex_Code>
+            </Instance_Id>
+            <Reference_Product_Header_Id></Reference_Product_Header_Id>
+            <Annex_Complete_Name>Lut of Top of Canopy</Annex_Complete_Name>
+            <LUT_Indexes>
+                <Altitude_Indexes>0 1000 2000 3000</Altitude_Indexes>
+                <AOT_Indexes>0.0 0.0625 0.125 0.1875 0.25 0.3125 0.375 0.4375 0.5 0.5625 0.625 0.6875 0.75 0.8125 0.875 0.9375 1.0 1.0625 1.125 1.1875 1.25 1.3125 1.375 1.4375 1.5</AOT_Indexes>
+                <TOA_Reflectance_Indexes>-0.2 -0.13 -0.06 0.01 0.08 0.15 0.22 0.29 0.36 0.43 0.5 0.57 0.64 0.71 0.78 0.85 0.92 0.99 1.06 1.13</TOA_Reflectance_Indexes>
+            </LUT_Indexes>
+            <List_of_Band_Theoretical_Wavelength count="1">
+                <Band_Theoretical_Wavelength sn="1" unit="nanometer">443</Band_Theoretical_Wavelength>
+            </List_of_Band_Theoretical_Wavelength>
+            <List_of_LTC count="7">
+                <LTC sn="1">
+                    <Date>UTC=2018-07-09T15:56:49</Date>
+                    <Solar_Angles>
+                        <Image_Center>
+                            <Azimuth unit="deg">148.003705003</Azimuth>
+                            <Zenith unit="deg">26.084857307</Zenith>
+                        </Image_Center>
+                    </Solar_Angles>
+                    <Viewing_Angles>
+                        <Image_Center>
+                            <Azimuth unit="deg">228.346419355</Azimuth>
+                            <Zenith unit="deg">3.455401042</Zenith>
+                        </Image_Center>
+                    </Viewing_Angles>
+                </LTC>
+                <LTC sn="2">
+                    <Date>UTC=2018-07-04T17:40:24</Date>
+                    <Solar_Angles>
+                        <Image_Center>
+                            <Azimuth unit="deg">147.933533864</Azimuth>
+                            <Zenith unit="deg">25.525208762</Zenith>
+                        </Image_Center>
+                    </Solar_Angles>
+                    <Viewing_Angles>
+                        <Image_Center>
+                            <Azimuth unit="deg">229.210009643</Azimuth>
+                            <Zenith unit="deg">3.453342340</Zenith>
+                        </Image_Center>
+                    </Viewing_Angles>
+                </LTC>
+                <LTC sn="3">
+                    <Date>UTC=2018-06-29T12:38:41</Date>
+                    <Solar_Angles>
+                        <Image_Center>
+                            <Azimuth unit="deg">148.043920605</Azimuth>
+                            <Zenith unit="deg">25.112037834</Zenith>
+                        </Image_Center>
+                    </Solar_Angles>
+                    <Viewing_Angles>
+                        <Image_Center>
+                            <Azimuth unit="deg">228.223444751</Azimuth>
+                            <Zenith unit="deg">3.452703311</Zenith>
+                        </Image_Center>
+                    </Viewing_Angles>
+                </LTC>
+                <LTC sn="4">
+                    <Date>UTC=2018-06-19T12:37:24</Date>
+                    <Solar_Angles>
+                        <Image_Center>
+                            <Azimuth unit="deg">148.902528376</Azimuth>
+                            <Zenith unit="deg">24.728121442</Zenith>
+                        </Image_Center>
+                    </Solar_Angles>
+                    <Viewing_Angles>
+                        <Image_Center>
+                            <Azimuth unit="deg">228.159445638</Azimuth>
+                            <Zenith unit="deg">3.453462679</Zenith>
+                        </Image_Center>
+                    </Viewing_Angles>
+                </LTC>
+                <LTC sn="5">
+                    <Date>UTC=2018-06-14T12:41:54</Date>
+                    <Solar_Angles>
+                        <Image_Center>
+                            <Azimuth unit="deg">149.597377200</Azimuth>
+                            <Zenith unit="deg">24.772440728</Zenith>
+                        </Image_Center>
+                    </Solar_Angles>
+                    <Viewing_Angles>
+                        <Image_Center>
+                            <Azimuth unit="deg">227.602372891</Azimuth>
+                            <Zenith unit="deg">3.417621057</Zenith>
+                        </Image_Center>
+                    </Viewing_Angles>
+                </LTC>
+                <LTC sn="6">
+                    <Date>UTC=2018-06-09T13:10:37</Date>
+                    <Solar_Angles>
+                        <Image_Center>
+                            <Azimuth unit="deg">150.402865777</Azimuth>
+                            <Zenith unit="deg">24.984490545</Zenith>
+                        </Image_Center>
+                    </Solar_Angles>
+                    <Viewing_Angles>
+                        <Image_Center>
+                            <Azimuth unit="deg">227.486230423</Azimuth>
+                            <Zenith unit="deg">3.433873080</Zenith>
+                        </Image_Center>
+                    </Viewing_Angles>
+                </LTC>
+                <LTC sn="7">
+                    <Date>UTC=2020-02-09T12:30:57</Date>
+                    <Solar_Angles>
+                        <Image_Center>
+                            <Azimuth unit="deg">161.536548799</Azimuth>
+                            <Zenith unit="deg">62.212948285</Zenith>
+                        </Image_Center>
+                    </Solar_Angles>
+                    <Viewing_Angles>
+                        <Image_Center>
+                            <Azimuth unit="deg">225.860518606</Azimuth>
+                            <Zenith unit="deg">3.400669316</Zenith>
+                        </Image_Center>
+                    </Viewing_Angles>
+                </LTC>
+            </List_of_LTC>
+            <DBL_Organization>
+                <List_of_Packaged_DBL_Files count="7">
+                    <Packaged_DBL_File sn="1">
+                        <Relative_File_Path>LTC/20180709.mha</Relative_File_Path>
+                        <File_Definition>SSC_LUTANX</File_Definition>
+                    </Packaged_DBL_File>
+                    <Packaged_DBL_File sn="2">
+                        <Relative_File_Path>LTC/20180704.mha</Relative_File_Path>
+                        <File_Definition>SSC_LUTANX</File_Definition>
+                    </Packaged_DBL_File>
+                    <Packaged_DBL_File sn="3">
+                        <Relative_File_Path>LTC/20180629.mha</Relative_File_Path>
+                        <File_Definition>SSC_LUTANX</File_Definition>
+                    </Packaged_DBL_File>
+                    <Packaged_DBL_File sn="4">
+                        <Relative_File_Path>LTC/20180619.mha</Relative_File_Path>
+                        <File_Definition>SSC_LUTANX</File_Definition>
+                    </Packaged_DBL_File>
+                    <Packaged_DBL_File sn="5">
+                        <Relative_File_Path>LTC/20180614.mha</Relative_File_Path>
+                        <File_Definition>SSC_LUTANX</File_Definition>
+                    </Packaged_DBL_File>
+                    <Packaged_DBL_File sn="6">
+                        <Relative_File_Path>LTC/20180609.mha</Relative_File_Path>
+                        <File_Definition>SSC_LUTANX</File_Definition>
+                    </Packaged_DBL_File>
+                    <Packaged_DBL_File sn="7">
+                        <Relative_File_Path>LTC/20200209.mha</Relative_File_Path>
+                        <File_Definition>SSC_LUTANX</File_Definition>
+                    </Packaged_DBL_File>
+                </List_of_Packaged_DBL_Files>
+            </DBL_Organization>
+        </Specific_Product_Header>
+    </Variable_Header>
+</Earth_Explorer_Header>

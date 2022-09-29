@@ -1,0 +1,9 @@
+set -e
+source /work/ALT/swot/aval/neige/cosims_env/cosims_install/activate
+./make_archived_aux.py \
+    '/work/ALT/swot/aval/neige/cosims-bucketmirror/hidden_value' \
+    '/work/ALT/swot/aval/neige/cosims-bucketmirror/hidden_value/csi_aux'
+rclone sync /work/ALT/swot/aval/neige/cosims-bucketmirror/hidden_value/csi_aux cosims-internal:hidden_value/csi_aux -v
+rclone sync /work/ALT/swot/aval/neige/cosims-bucketmirror/hidden_value/csi_aux bar:hidden_value/csi_aux -v
+
+

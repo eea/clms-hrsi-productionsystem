@@ -1,0 +1,13 @@
+ping db server
+curl db API url
+
+ping admin
+ssh admin with priv key
+rclone eodata from admin
+rclone cosims from admin
+curl db API url from admin
+
+ping nomad server
+ping clients (via admin)
+check nomad is running
+check that nomad sees its clients

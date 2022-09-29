@@ -1,0 +1,10 @@
+./l1c_search.py \
+    --output_file='file_list_copernicus.dat' \
+    --start_date='2016-09-01' \
+    --end_date='2017-01-01' \
+    --eea39_dir='/mnt/data_hdd/snow_and_ice/AOI/si_software_data/AOI_EEA39'
+./l1c_search.py \
+    --output_file='file_list_wekeo.dat' \
+    --start_date='2016-09-01' \
+    --end_date='2017-01-01' \
+    --eea39_dir='/mnt/data_hdd/snow_and_ice/AOI/si_software_data/AOI_EEA39' --use_wekeo

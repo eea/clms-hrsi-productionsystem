@@ -1,0 +1,4 @@
+test_download
+test_download*
+__pycache__
+wget-log*

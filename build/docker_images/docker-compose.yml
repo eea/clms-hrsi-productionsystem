@@ -1,0 +1,73 @@
+# This docker compose file is used to build and push docker images for the
+# project.
+#
+# Inputs are managed with environment variables (with fallback to default
+# values if these variables are not set):
+# - CSI_DOCKER_REGISTRY_IMAGE (default to csi): the image prefix. For CI/CD this contains
+#   the registry where to push the images (GitLab one for example).
+# - CSI_DOCKER_TAG (default to local): the tag to apply. Usually the git hash
+#   when used from a CI/CD.
+
+
+# In docker compose file, you can insert environment variables. For that you use
+# the syntax `${MY_ENV_VAR}`. You can also provide a default value in case the
+# variable is not define `${MY_ENV_VAR-default_value}` (note the dash between
+# the var name and the default value).
+#
+# We use this to allow configuration of docker image naming with environment
+# variables when used during CI/CD (especially for tagging with git hash) with
+# a fallback to basic value when used locally:
+#     ${CSI_DOCKER_REGISTRY_IMAGE-csi}/my_image_base_name:${CSI_DOCKER_TAG-local}
+
+version: '3'
+services:
+  database:
+    image: ${CSI_DOCKER_REGISTRY_IMAGE-csi}/database:${CSI_DOCKER_TAG-local}
+    build:
+      context: ../../components/database
+
+  job_creation:
+    image: ${CSI_DOCKER_REGISTRY_IMAGE-csi}/job_creation:${CSI_DOCKER_TAG-local}
+    build:
+      context: ../..
+      dockerfile: components/job_creation/docker/Dockerfile
+
+  job_configuration:
+    image: ${CSI_DOCKER_REGISTRY_IMAGE-csi}/job_configuration:${CSI_DOCKER_TAG-local}
+    build:
+      context: ../..
+      dockerfile: components/job_configuration/docker/Dockerfile
+
+  job_execution:
+    image: ${CSI_DOCKER_REGISTRY_IMAGE-csi}/job_execution:${CSI_DOCKER_TAG-local}
+    build:
+      context: ../..
+      dockerfile: components/job_execution/docker/Dockerfile
+
+  job_publication:
+    image: ${CSI_DOCKER_REGISTRY_IMAGE-csi}/job_publication:${CSI_DOCKER_TAG-local}
+    build:
+      context: ../..
+      dockerfile: components/job_publication/docker/Dockerfile
+
+  worker_pool:
+    image: ${CSI_DOCKER_REGISTRY_IMAGE-csi}/worker_pool:${CSI_DOCKER_TAG-local}
+    build:
+      context: ../..
+      dockerfile: components/worker_pool/docker/Dockerfile
+
+  monitor:
+    image: ${CSI_DOCKER_REGISTRY_IMAGE-csi}/monitor:${CSI_DOCKER_TAG-local}
+    build:
+      context: ../..
+      dockerfile: components/monitor/docker/Dockerfile
+
+  dashboard:
+    image: ${CSI_DOCKER_REGISTRY_IMAGE-csi}/dashboard:${CSI_DOCKER_TAG-local}
+    build:
+      context: ../../components/dashboard
+
+  processings_stub:
+    image: ${CSI_DOCKER_REGISTRY_IMAGE-csi}/processing_stub:${CSI_DOCKER_TAG-local}
+    build:
+      context: ../../components/si_software/stub

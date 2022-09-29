@@ -1,0 +1,47 @@
+
+#output directory
+output_dir: /output
+
+#temp directory: working directory (must be an existing empty folder)
+temp_dir: /temp
+#copy all files to temp directory before computing (better for DIAS type architectures)
+copy_input_files_to_temp_dir: false
+delete_temp_dir_on_error: true
+delete_temp_dir_on_success: true
+  
+
+#dias options => activates dias logger and a more strict parameter check for operational purposes
+dias_psa_job_id: 
+
+
+verbose: 2
+nprocs: 6
+max_ram: 4096 #sets max ram hint fot otb, gdal, itk. default is 256 (in MB)
+
+persistent_snow_ratio: 0.95
+fsc_toc_file_list:
+- /fsctoc_files/FSC_20180609T103214_SENTINEL2B_T32TLR_V000_1_FSCTOC.tif
+- /fsctoc_files/FSC_20180614T103021_SENTINEL2A_T32TLR_V000_1_FSCTOC.tif
+- /fsctoc_files/FSC_20180619T103559_SENTINEL2B_T32TLR_V000_1_FSCTOC.tif
+- /fsctoc_files/FSC_20180629T103021_SENTINEL2B_T32TLR_V000_1_FSCTOC.tif
+- /fsctoc_files/FSC_20180704T103023_SENTINEL2A_T32TLR_V000_1_FSCTOC.tif
+- /fsctoc_files/FSC_20180709T103418_SENTINEL2B_T32TLR_V000_1_FSCTOC.tif
+- /fsctoc_files/FSC_20180714T103023_SENTINEL2A_T32TLR_V000_1_FSCTOC.tif
+- /fsctoc_files/FSC_20180719T103820_SENTINEL2B_T32TLR_V000_1_FSCTOC.tif
+- /fsctoc_files/FSC_20180724T103551_SENTINEL2A_T32TLR_V000_1_FSCTOC.tif
+- /fsctoc_files/FSC_20180729T103019_SENTINEL2B_T32TLR_V000_1_FSCTOC.tif
+- /fsctoc_files/FSC_20180803T103239_SENTINEL2A_T32TLR_V000_1_FSCTOC.tif
+- /fsctoc_files/FSC_20180808T103448_SENTINEL2B_T32TLR_V000_1_FSCTOC.tif
+- /fsctoc_files/FSC_20180818T103724_SENTINEL2B_T32TLR_V000_1_FSCTOC.tif
+- /fsctoc_files/FSC_20180823T103535_SENTINEL2A_T32TLR_V000_1_FSCTOC.tif
+- /fsctoc_files/FSC_20180828T103013_SENTINEL2B_T32TLR_V000_1_FSCTOC.tif
+- /fsctoc_files/FSC_20180902T103726_SENTINEL2A_T32TLR_V000_1_FSCTOC.tif
+- /fsctoc_files/FSC_20180907T103737_SENTINEL2B_T32TLR_V000_1_FSCTOC.tif
+- /fsctoc_files/FSC_20180912T103308_SENTINEL2A_T32TLR_V000_1_FSCTOC.tif
+- /fsctoc_files/FSC_20180917T103154_SENTINEL2B_T32TLR_V000_1_FSCTOC.tif
+- /fsctoc_files/FSC_20180922T103017_SENTINEL2A_T32TLR_V000_1_FSCTOC.tif
+- /fsctoc_files/FSC_20180927T103016_SENTINEL2B_T32TLR_V000_1_FSCTOC.tif
+- /fsctoc_files/FSC_20181002T103018_SENTINEL2A_T32TLR_V000_1_FSCTOC.tif
+- /fsctoc_files/FSC_20181012T103703_SENTINEL2A_T32TLR_V000_1_FSCTOC.tif
+- /fsctoc_files/FSC_20181017T103202_SENTINEL2B_T32TLR_V000_1_FSCTOC.tif
+- /fsctoc_files/FSC_20181022T103053_SENTINEL2A_T32TLR_V000_1_FSCTOC.tif

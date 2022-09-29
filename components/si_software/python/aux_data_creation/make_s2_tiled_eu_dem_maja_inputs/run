@@ -1,0 +1,17 @@
+
+set -e
+
+./create_maja_dtm.py \
+    --output_dir='/work/ALT/swot/aval/neige/cosims-bucketmirror/hidden_value/eu_dem' \
+    --l1c_samples_eea39_dir='/work/ALT/swot/aval/neige/transitory_data/l1c_samples_eea39' \
+    --eu_dem_src_dir='/work/OT/siaa/Theia/Neige/CoSIMS/data/EU-DEM/original_tiling' \
+    --src_cropped_shapefile_dir='/work/ALT/swot/aval/neige/transitory_data/cropped_shapefiles_with_coasts' \
+    --tmp_dir='/work/scratch/jugierr/tmp' $@
+
+#~ ./create_maja_dtm.py \
+    #~ --output_dir='/work/ALT/swot/aval/neige/cosims-bucketmirror/hidden_value/eu_dem0' \
+    #~ --l1c_samples_eea39_dir='/work/ALT/swot/aval/neige/transitory_data/l1c_samples_eea39' \
+    #~ --eu_dem_src_dir='/work/OT/siaa/Theia/Neige/CoSIMS/data/EU-DEM/original_tiling' \
+    #~ --src_cropped_shapefile_dir='/work/ALT/swot/aval/neige/transitory_data/cropped_shapefiles_with_coasts' \
+    #~ --zone_selection_shapefile='/work/OT/siaa/Theia/Neige/CoSIMS/data/EU-HYDRO/eu_hydro_merged_shapefiles/eu_hydro_riverbasins.shp' \
+    #~ --tmp_dir='/work/scratch/jugierr/tmp' $@

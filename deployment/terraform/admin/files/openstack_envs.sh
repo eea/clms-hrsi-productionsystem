@@ -1,0 +1,10 @@
+export OS_AUTH_URL=https://cf2.cloudferro.com:5000/v3
+export OS_PROJECT_ID=${OS_PROJECT_ID}
+export OS_PROJECT_NAME=${OS_PROJECT_NAME}
+export OS_USER_DOMAIN_NAME="hidden_value"
+export OS_PROJECT_DOMAIN_ID="hidden_value"
+export OS_USERNAME=${OS_USERNAME}
+export OS_PASSWORD=${OS_PASSWORD}
+export OS_REGION_NAME="RegionOne"
+export OS_INTERFACE=public
+export OS_IDENTITY_API_VERSION=3

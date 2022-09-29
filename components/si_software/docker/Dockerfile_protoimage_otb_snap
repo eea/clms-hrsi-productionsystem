@@ -1,0 +1,100 @@
+FROM ubuntu:18.04
+MAINTAINER Rémi Jugier "remi.jugier@magellium.fr"
+
+ENV LANG C.UTF-8
+ENV LC_ALL C.UTF-8
+ENV DEBIAN_FRONTEND noninteractive
+    
+#basic system installs
+RUN apt-get update --fix-missing
+
+RUN apt-get install -y build-essential tar file apt-utils pkg-config
+RUN apt-get install -y python3 python3-pip python3-venv
+#the following packages are necessary for package compilation (mostly OTB) => most could probably be removed for final docker image
+RUN apt-get install -y cmake unzip git freeglut3 freeglut3-dev libpng-dev libxrandr-dev libxi-dev xorg-dev libboost-all-dev swig
+RUN apt-get install -y ffmpeg libgeos-dev wget curl
+
+#make python3 the default python => needs to be done after the installation of system packages responsible for installing python2
+RUN rm -f $(which python); ln -s $(which python3) /usr/bin/python
+
+#python packages
+RUN pip3 install Cython
+RUN pip3 install numpy scipy shapely pyproj==2.6.1 fiona pyyaml lxml
+
+#install rclone
+RUN curl --silent --remote-name  https://downloads.rclone.org/v1.50.2/rclone-v1.50.2-linux-amd64.zip; \
+    unzip rclone-v1.50.2-linux-amd64.zip; \
+    mv rclone-v1.50.2-linux-amd64/rclone /usr/local/bin/; \
+    rm -Rf rclone-v1.50.2-linux-amd64*
+
+#create necessary directories
+RUN mkdir src install work
+
+#install programs from source
+COPY rename_decompress.py /src/
+WORKDIR /src
+
+##############################
+#install OTB
+COPY otb.tar.gz otb.tar.gz
+RUN tar -zxvf otb.tar.gz
+COPY SuperBuild-archives.tar.bz2 SuperBuild-archives.tar.bz2
+RUN mkdir archive; cd archive; tar -xvf ../SuperBuild-archives.tar.bz2
+RUN rm -f SuperBuild-archives.tar.bz2 otb.tar.gz
+RUN mkdir otb_build
+WORKDIR /src/otb_build
+RUN cmake -DDOWNLOAD_LOCATION:PATH=/src/archive \
+    -DCMAKE_INSTALL_PREFIX:PATH=/install/otb \
+    -DOTB_WRAP_PYTHON:BOOL=ON \
+    -DOTB_USE_QT:BOOL=OFF \
+    -DOTB_USE_QWT:BOOL=OFF \
+    -DOTB_USE_GLEW:BOOL=OFF \
+    -DOTB_USE_OPENGL:BOOL=OFF \
+    -DOTB_USE_CURL:BOOL=OFF \
+    -DOTB_USE_LIBSVM:BOOL=OFF \
+    -DOTB_USE_OPENCV:BOOL=OFF \
+    -DOTB_USE_SHARK:BOOL=OFF \
+    -DOTB_USE_6S:BOOL=OFF \
+    -DOTB_USE_SIFTFAST:BOOL=OFF \
+    -DOTB_USE_MUPARSER:BOOL=ON \
+    -DOTB_USE_MUPARSERX:BOOL=ON \
+    ../otb/SuperBuild 
+RUN make
+#add gdal path
+ENV OTB_APPLICATION_PATH=/install/otb/lib/otb/applications
+ENV OTB_LD_LIBRARY_PATH=/install/otb/lib
+ENV OTB_PYTHONPATH=/install/otb/lib/python3/dist-packages:/install/otb/lib/otb/python
+ENV OTB_PATH=/install/otb/bin
+WORKDIR /src
+RUN rm -R -f otb*
+#~ ##############################
+
+
+
+##############################
+#install SNAP
+COPY esa-snap_sentinel_unix_8_0.sh /src/
+RUN bash esa-snap_sentinel_unix_8_0.sh -q -dir /install/snap
+RUN /install/snap/bin/gpt 2>/dev/null 1>/dev/null
+RUN rm -f esa-snap_sentinel_unix_8_0.sh
+ENV LD_LIBRARY_PATH=.:${LD_LIBRARY_PATH}
+RUN wget http://step.esa.int/auxdata/dem/egm96/ww15mgh_b.zip -O ww15mgh_b.zip; \
+    mkdir -p /root/.snap/auxdata/dem/egm96/; \
+    mv ww15mgh_b.zip /root/.snap/auxdata/dem/egm96/
+##############################
+
+
+#~ RUN apt-get remove -y --purge libxrandr-dev libxi-dev xorg-dev libboost-all-dev qttools5-dev swig
+#~ RUN apt-get autoremove -y
+
+
+#go to empty work directory
+WORKDIR /
+
+#delete src dir
+RUN rm -R /src
+
+
+
+
+

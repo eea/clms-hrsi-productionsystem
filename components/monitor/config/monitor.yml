@@ -1,0 +1,7 @@
+
+# Time in seconds between two requests to the database for new jobs.
+sleep: 60
+
+# Initial log level. Can be modified later by the operator for e.g. debugging jobs.
+# Either CRITICAL, ERROR, WARNING, INFO, or DEBUG.
+log_level: INFO

@@ -1,0 +1,47 @@
+#tile id: required for error message and checking that input files are from the correct tile (can never be too careful!)
+tile_id: $tile_id
+
+#temp directory: working directory
+temp_dir: /work/jobs/$job_unique_id/temp
+output_dir: /work/jobs/$job_unique_id/outputs
+
+#copy all files to temp directory before computing (better for DIAS type architectures)
+copy_input_files_to_temp_dir: false
+delete_temp_dir_on_error: true
+delete_temp_dir_on_success: true
+
+# TODO the dias_fsc_rlie_job_unique_id is no more used, remove it here and in
+# S&I software.
+#dias options => activates dias logger and a more strict parameter check for operational purposes
+dias_fsc_rlie_job_unique_id: 
+
+verbose: 1
+nprocs: 2
+max_ram: 4096 #sets max ram hint fot otb, gdal, itk. default is 256 (in MB)
+
+dem_dir: /work/jobs/$job_unique_id/eu_dem/S2__TEST_AUX_REFDE2_T${tile_id}_0001
+maja:
+  static_parameter_files_dir: /work/maja/maja_static
+  user_config_dir: /work/maja/maja_userconf
+  #mode: nominal, backward or init
+  mode: ${maja_mode}
+  #product mode overide => the FSC and RLIE output product naming convention contains a mode (0 for nominal, 1 for provisional).
+  #By default it will be set to 1 if MAJA mode is set to nominal or backward with > 4 L1Cs. Otherwise it is set to 0.
+  product_mode_overide: ${product_mode_overide}
+  l1c_file: ${product_file_path}
+  l2a_file: ${l2a_file}
+  save_output_l2a_file: false
+  debug: false
+  # additional_maja_options: 
+  max_cloud_cover_acceptable_percent: 90.
+  remove_sre_bands: true
+  max_processing_time: 14400
+lis:
+  tree_cover_density: /work/jobs/$job_unique_id/tree_cover_density/TCD_${tile_id}.tif
+  water_mask: /work/jobs/$job_unique_id/eu_hydro/raster/20m/eu_hydro_20m_${tile_id}.tif
+  max_processing_time: 600
+ice:
+  generate_product: ${generate_ice_product}
+  river_shapefile: ${river_shapefile}
+  hrl_flags_file: ${hrl_flags_file}
+  max_processing_time: 600

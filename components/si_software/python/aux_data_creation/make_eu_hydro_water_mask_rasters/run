@@ -1,0 +1,9 @@
+set -e
+
+./make_eu_hydro_water_mask_rasters.py \
+    /work/ALT/swot/aval/neige/cosims-bucketmirror/hidden_value/eu_dem \
+    /work/ALT/swot/aval/neige/cosims-bucketmirror/hidden_value/eu_hydro/shapefile \
+    /work/ALT/swot/aval/neige/cosims-bucketmirror/hidden_value/eu_hydro/raster/20m \
+    --output_prefix='eu_hydro_20m' \
+    --resolution=R2 $@
+

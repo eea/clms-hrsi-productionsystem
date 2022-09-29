@@ -1,0 +1,5 @@
+./plot_tile_priority_list.py \
+    --output_figure='tile_priority_list.png' \
+    --eea39_dir='/mnt/data_hdd/snow_and_ice/AOI/si_software_data/AOI_EEA39' \
+    --tile_list_file='tile_priority_list.txt'
+    

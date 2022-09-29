@@ -1,0 +1,18 @@
+
+docker run --rm -it \
+    -v /mnt/data_hdd/snow_and_ice/snow_and_ice_scheduler_full/test_bundle:/input \
+    -v /mnt/data_hdd/snow_and_ice/snow_and_ice_scheduler_full/simple_docker_test/extract:/input2 \
+    -v /mnt/data_hdd/snow_and_ice/snow_and_ice_scheduler_full/simple_docker_test/input_params:/input_params \
+    -v /mnt/data_hdd/snow_and_ice/snow_and_ice_scheduler_full/simple_docker_test/results:/output \
+    -v /mnt/data_hdd/snow_and_ice/snow_and_ice_scheduler_full/simple_docker_test/temp:/temp \
+    -v path_to/cosims/components/si_software/python:/soft_copy \
+    si_software:latest \
+    fsc_rlie_processing_chain.py /input_params/fsc_rlie_processing_chain.yaml
+
+    
+#~ docker run --rm -it \
+    #~ -v /mnt/data_hdd/snow_and_ice/snow_and_ice_scheduler_full/test_bundle_psa:/input \
+    #~ -v /mnt/data_hdd/snow_and_ice/snow_and_ice_scheduler_full/test_docker:/output \
+    #~ -v /mnt/data_hdd/docker_temp:/temp \
+    #~ si_software:latest \
+    #~ psa_s2tile_processing_chain.py /input/psa_s2tile_processing_chain.yaml

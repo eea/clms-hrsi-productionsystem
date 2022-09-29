@@ -1,0 +1,11 @@
+status:
+- csi_si_software_start
+- maja_start
+- maja_returned
+- maja_successful
+- lis_start
+- ice_start
+- lis_returned
+- lis_successful
+- ice_returned
+- ice_successful

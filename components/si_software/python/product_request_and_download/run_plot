@@ -1,0 +1,1 @@
+./plot_timeliness.py --output_figure='timeliness.png' --db_adress='http://193.142.27.9:3000' --start_date='2020-06-16' --end_date='2020-06-17'

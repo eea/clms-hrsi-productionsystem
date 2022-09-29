@@ -1,0 +1,4 @@
+./gen_cropped_shapefiles.py \
+    --eea39_gdal_info_file='/work/ALT/swot/aval/neige/cosims-bucketmirror/hidden_value/AOI_EEA39/s2tiles_eea39/s2tiles_eea39_gdal_info.json' \
+    --src_shapefile='/work/OT/siaa/Theia/Neige/CoSIMS/data/EU-HYDRO/eu_hydro_merged_shapefiles/eu_hydro_landwater.shp' \
+    --output_dir='/work/ALT/swot/aval/neige/cosims-bucketmirror/hidden_value/eu_hydro/shapefile' $@

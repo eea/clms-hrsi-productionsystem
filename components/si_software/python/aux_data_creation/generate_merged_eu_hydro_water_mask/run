@@ -1,0 +1,1 @@
+./gen_eu_water_mask.py /mnt/data_hdd_temp/snow_and_ice/EU_DTM/eu_hydro_basin_geodatabases /mnt/data_hdd_temp/snow_and_ice/EU_DTM/eu_hydro_merged_shapefiles

@@ -1,0 +1,112 @@
+ARG BASE_IMAGE_TAG=latest
+FROM si_software_base:$BASE_IMAGE_TAG
+
+MAINTAINER Rémi Jugier "remi.jugier@magellium.fr"
+
+
+RUN mkdir /src
+WORKDIR /src
+
+#save old env vars
+ENV ORIGINAL_LD_LIBRARY_PATH=$LD_LIBRARY_PATH
+ENV ORIGINAL_PYTHONPATH=$PYTHONPATH
+
+#new env vars with OTB preloaded
+ENV LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$OTB_LD_LIBRARY_PATH
+ENV PYTHONPATH=$PYTHONPATH:$OTB_PYTHONPATH
+ENV PATH=$PATH:/install/otb/bin
+
+RUN apt-get install -y libjpeg-dev zlib1g-dev lsof
+
+# pip install the requirements for the si_software
+RUN pip3 install matplotlib==3.2.2 requests pytz python_dateutil kombu descartes 
+RUN pip3 install --user https://github.com/matplotlib/basemap/archive/v1.2.1rel.zip
+RUN pip3 install Pillow
+RUN pip3 install rasterio
+RUN pip3 install tqdm
+RUN pip3 install country_converter pandas
+
+#install programs from source
+COPY rename_decompress.py /src/
+
+ENV maja_version 4.5.3
+
+##############################
+#MAJA
+COPY MAJA-${maja_version}.run /src/MAJA-${maja_version}.run
+RUN bash MAJA-${maja_version}.run --target /install/maja
+ENV PATH=$PATH:/install/maja/bin
+##############################
+
+
+##############################
+#LIS
+#install LIS
+WORKDIR /src
+COPY lis.tar.gz /src/
+RUN ./rename_decompress.py lis
+RUN mkdir lis_build
+WORKDIR lis_build
+RUN cmake -DCMAKE_PREFIX_PATH=/install/otb -DCMAKE_INSTALL_PREFIX=/install/lis /src/lis
+RUN make -j
+RUN make install
+WORKDIR /src
+RUN rm -R -f lis*
+RUN chmod u+x /install/lis/app/*
+ENV PATH=/install/lis/app:/install/lis/bin:$PATH
+ENV OTB_APPLICATION_PATH=$OTB_APPLICATION_PATH:/install/lis/lib
+ENV LIS_PYTHONPATH=/install/lis/app:/install/lis/lib/python3.6/site-packages
+ENV PYTHONPATH=$PYTHONPATH:$LIS_PYTHONPATH
+ENV LIS_LD_LIBRARY_PATH=/install/lis/lib
+ENV LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$LIS_LD_LIBRARY_PATH
+##############################
+
+
+
+##############################
+#ICE
+#install ICE (simple copy)
+COPY ProcessRiverIce.tar.gz /src/
+RUN ./rename_decompress.py processriverice --output_path=/install/ice
+RUN chmod u+x /install/ice/ProcessRiverIce
+RUN mv /install/ice/classifiers /root/.snap/auxdata/classifiers
+ENV PATH=/install/snap/bin:$PATH
+ENV PATH=/install/ice:$PATH
+##############################
+
+
+
+##############################
+#csi_si_software
+COPY csi_si_software.tar.gz /src/
+RUN ./rename_decompress.py csi_si_software --output_path=/install/cosims_python/cosims
+
+# pip install the requirements for the "common" modules
+#  => takes a bit too much time to do it every time the image is rebuilt so we skip it for now and add modules manually
+#~ RUN pip3 install -r /install/cosims_python/cosims/components/common/python/requirements.txt
+
+# Add the CoSIMS Python components to the PYTHONPATH env var and programs to the PATH env var
+ENV PYTHONPATH=/install/cosims_python/cosims/components/si_software/python:/install/cosims_python:${PYTHONPATH}
+ENV PATH=/install/cosims_python/cosims/components/si_software/python/si_software:$PATH
+ENV PATH=/install/cosims_python/cosims/components/si_software/python/si_software/standalone:$PATH
+ENV PATH=/install/cosims_python/cosims/components/si_software/python/si_reprocessing:$PATH
+ENV PATH=/install/cosims_python/cosims/components/si_software/python/si_report:$PATH
+ENV PATH=/install/cosims_python/cosims/components/si_software/python/product_request_and_download:$PATH
+ENV PATH=/install/cosims_python/cosims/components/si_software/python/si_utils:$PATH
+##############################
+
+#make cosims/components/si_software/python/si_reprocessing/rclone_default_config/rclone.conf the default rclone configuration
+RUN mkdir -p ~/.config/rclone; \
+    cp /install/cosims_python/cosims/components/si_software/python/si_reprocessing/rclone_default_config/rclone.conf ~/.config/rclone/
+
+#go to empty work directory
+WORKDIR /work
+
+#delete src dir
+RUN rm -R /src
+
+
+ENV OTB_LOGGER_LEVEL=CRITICAL
+ENV PYTHONUNBUFFERED=1
+
+

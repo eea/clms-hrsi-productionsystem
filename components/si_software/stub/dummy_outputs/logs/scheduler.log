@@ -1,0 +1,18 @@
+2019-09-06 13:31:04,140 - run_snow_ice - INFO - Checking parameters...
+2019-09-06 13:31:04,143 - run_snow_ice - INFO - 
+2019-09-06 13:31:04,143 - run_snow_ice - INFO - 
+2019-09-06 13:31:04,143 - run_snow_ice - INFO - ##########################################################################################
+2019-09-06 13:31:04,143 - run_snow_ice - INFO - MAJA
+2019-09-06 13:31:04,144 - run_snow_ice - INFO - 
+2019-09-06 13:31:04,144 - run_snow_ice - INFO - Initializing MAJA processing...
+2019-09-06 13:31:04,153 - run_snow_ice - INFO - Launching MAJA:
+/install/maja_executable/bin/maja -i temp_20190906T133104U140517/maja/in -o temp_20190906T133104U140517/maja/out -m L2NOMINAL -ucs temp_20190906T133104U140517/maja/userconf --TileId 32TLR --NbThreads 2
+2019-09-06 14:01:43,518 - run_snow_ice - INFO - MAJA processing successful, completed in 1788.94039798 seconds
+2019-09-06 14:01:43,521 - run_snow_ice - INFO - 
+2019-09-06 14:01:43,521 - run_snow_ice - INFO - 
+2019-09-06 14:01:43,521 - run_snow_ice - INFO - ##########################################################################################
+2019-09-06 14:01:43,521 - run_snow_ice - INFO - LIS and ICE
+2019-09-06 14:01:43,521 - run_snow_ice - INFO - 
+2019-09-06 14:01:43,521 - run_snow_ice - INFO - Initializing LIS and ICE processing (LIS and ICE run in parallel tasks from L2A image)...
+2019-09-06 14:04:33,942 - run_snow_ice - INFO - LIS processing successful, completed in 160.144877911 seconds
+2019-09-06 14:04:33,943 - run_snow_ice - INFO - ICE processing successful, completed in 0.00756502151489 seconds

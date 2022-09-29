@@ -1,0 +1,3 @@
+.terraform/
+admin_id_rsa
+database_patch.sql

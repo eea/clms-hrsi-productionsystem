@@ -1,0 +1,79 @@
+FROM ubuntu:18.04
+MAINTAINER Rémi Jugier "remi.jugier@magellium.fr"
+
+ENV LANG C.UTF-8
+ENV LC_ALL C.UTF-8
+
+RUN ulimit -s unlimited
+
+#install libraries
+RUN apt-get -q update \
+    && apt-get -q -y install build-essential tar file apt-utils pkg-config cmake unzip git wget curl python3-dev python3-pip libproj-dev libpq-dev \
+    && apt-get -q clean \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN ln -s /usr/bin/python3 /usr/bin/python; ln -s /usr/bin/pip3 /usr/bin/pip
+
+#create necessary directories
+RUN mkdir src install work
+
+#install programs from source
+COPY rename_decompress.py /src/
+WORKDIR /src
+
+COPY dependencies_arlie/gdal-2.3.1.tar.gz /src/
+COPY dependencies_arlie/FileGDB_API_1_5_64gcc51.tar.gz /src/
+RUN ./rename_decompress.py filegdb --output_path=/FileGDB_API
+RUN ./rename_decompress.py gdal --output_path=/gdal
+
+ENV LD_LIBRARY_PATH=/FileGDB_API/lib:$LD_LIBRARY_PATH
+RUN cd /FileGDB_API/samples/; make
+RUN echo $PWD
+RUN cd /gdal; ./configure --with-python --with-fgdb=/FileGDB_API --with-pg --with-static-proj4
+RUN cd /gdal; make -j 4
+RUN cd /gdal; make install
+ENV LD_LIBRARY_PATH=/usr/local/lib:/usr/lib:$LD_LIBRARY_PATH
+
+
+
+
+
+
+##############################
+#install SNAP
+COPY protoimage_otb_snap/snap.sh /src/
+RUN ./rename_decompress.py snap --output_path=snap.sh
+RUN bash snap.sh -q -dir /install/snap
+RUN /install/snap/bin/gpt 2>/dev/null 1>/dev/null
+RUN rm -f snap.sh
+ENV LD_LIBRARY_PATH=.:${LD_LIBRARY_PATH}
+RUN wget http://step.esa.int/auxdata/dem/egm96/ww15mgh_b.zip -O ww15mgh_b.zip; \
+    mkdir -p /root/.snap/auxdata/dem/egm96/; \
+    mv ww15mgh_b.zip /root/.snap/auxdata/dem/egm96/
+##############################
+
+
+
+##############################
+#ICE
+#install ICE (simple copy)
+COPY csi_processing_chain_softwares/ProcessRiverIce.tar.gz /src/
+RUN ./rename_decompress.py processriverice --output_path=/install/ice
+RUN chmod u+x /install/ice/ProcessRiverIce
+RUN mv /install/ice/classifiers /root/.snap/auxdata/classifiers
+ENV PATH=/install/snap/bin:$PATH
+ENV PATH=/install/ice:$PATH
+##############################
+
+
+#go to empty work directory
+WORKDIR /work
+
+#delete src dir
+RUN rm -R /src
+
+
+
+
+
+

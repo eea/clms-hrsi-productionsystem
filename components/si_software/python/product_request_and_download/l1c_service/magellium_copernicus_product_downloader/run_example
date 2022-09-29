@@ -1,0 +1,40 @@
+
+######################
+#developped by Magellium SAS
+#author remi.jugier@magellium.fr
+######################
+
+
+
+#Exemple 1 : download specific S3 L1A product using magellium cosims service implemented on wekeo
+#all S3 L1 and L2 product types will work as well as S2 L1C products
+#~ ./s3_sral_downloader.py \
+  #~ --product_id S3B_SR_1_SRA_A__20201116T220021_20201116T225050_20201117T142118_3029_045_371______LN3_O_ST_004.SEN3 \
+  #~ --output_dir test1 \
+  #~ --server_ip '193.142.27.3' \
+  #~ --server_port '80'
+ 
+#Exemple 2 : download S3 L1A product using magellium cosims service implemented on wekeo
+#product types can be : SR_1_SR, SR_1_SRA_A, SR_1_SRA_BS, SR_2_LAN, SR_2_WAT
+#date_min and date_max are a selection on the start date of the product, not its end date.
+#Therefore a product like S3B_SR_1_SRA_A__20201116T220021_20201116T225050_20201117T142118_3029_045_371______LN3_O_ST_004.SEN3 can be selected using 
+#date_min='2020-11-16T22:00:00' and date_max='2020-11-16T22:30:00' although the product ends after the date_max
+./s3_sral_downloader.py \
+  --product_type SR_1_SRA_A \
+  --date_min 2020-11-16T22:00:00 \
+  --date_max 2020-11-16T22:30:00 \
+  --output_dir test2 \
+  --server_ip '193.142.27.3' \
+  --server_port '80'
+ 
+ 
+ 
+
+#Example 3 : using creodias downloader
+#WARNING : if the download takes more than 600 seconds, it will fail because the token will have expired. For this reason, this tool cannot be used to download S3 L1A on CNES cluster (too slow).
+#a creodias account has been created for the occasion for convenience, but if you create your own free account it will work of course...
+#~ ./download_s3_sral_l1a_product_from_creodias.py \
+    #~ --product_id S3B_SR_1_SRA_A__20201116T220021_20201116T225050_20201117T142118_3029_045_371______LN3_O_ST_004.SEN3 \
+    #~ --username="vedac30458@aalyaa.com" \
+    #~ --password="JxkjZJs95gNG9AJ7" \
+    #~ --output_dir test3

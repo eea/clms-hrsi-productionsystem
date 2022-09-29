@@ -1,0 +1,26 @@
+
+#output directory
+output_dir: /output
+
+#temp directory: working directory (must be an existing empty folder)
+temp_dir: /temp
+#copy all files to temp directory before computing (better for DIAS type architectures)
+copy_input_files_to_temp_dir: false
+delete_temp_dir_on_error: true
+delete_temp_dir_on_success: true
+
+#dias options => activates dias logger and a more strict parameter check for operational purposes
+dias_psa_laea_job_id:
+
+#directory containing psa products
+psa_product_dir: /psa_products
+ 
+laea_json_file: /AOI_EEA39/laea_tiles_eea39/laea_tiles_eea39_gdal_info.json
+s2_eea39_json_file: /AOI_EEA39/s2tiles_eea39/s2tiles_eea39_gdal_info.json
+
+test_mode: false
+
+verbose: 1
+nprocs: 5
+max_ram: 4096 #sets max ram hint fot otb, gdal, itk. default is 256 (in MB)
+

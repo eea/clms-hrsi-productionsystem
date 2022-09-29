@@ -1,0 +1,3 @@
+#!/bin/bash
+rclone sync --links /etc/letsencrypt foo/hidden_value/tf-proxy/letsencrypt
+systemctl reload nginx

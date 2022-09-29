@@ -1,0 +1,55 @@
+
+#output directory
+output_dir: /output
+
+#temp directory: working directory (must be an existing empty folder)
+temp_dir: /temp
+#copy all files to temp directory before computing (better for DIAS type architectures)
+copy_input_files_to_temp_dir: false
+delete_temp_dir_on_error: true
+delete_temp_dir_on_success: true
+
+#dias options => activates dias logger and a more strict parameter check for operational purposes
+dias_fsc_rlie_job_id: 
+
+
+verbose: 1
+nprocs: 6
+max_ram: 4096 #sets max ram hint fot otb, gdal, itk. default is 256 (in MB)
+
+dem_dir: /input/dem/S2__TEST_AUX_REFDE2_T32TLR_0001
+maja:
+  #static_parameter_files_dir: directory containing 
+  static_parameter_files_dir: /input/maja_static
+  user_config_dir: /input/maja_userconf
+  #mode: nominal, backward or init
+  mode: nominal
+  #product mode overide => the FSC and RLIE output product naming convention contains a mode (0 for provisional, 1 for nominal).
+  #By default it will be set to 1 if MAJA mode is set to nominal or backward with > 8 L1Cs. Otherwise it is set to 0.
+  product_mode_overide: 0
+  
+  #for nominal or init mode, l1c_file : file_path, for backward mode : l1c_file : list of file paths (ideally 8)
+  l1c_file: /input/l1c/S2A_MSIL1C_20180614T103021_N0206_R108_T32TLR_20180614T124154.SAFE
+  #l2a_file : file_path (only for nominal mode)
+  l2a_file: /input/l2a/SENTINEL2A_20180604-103550-770_L2A_T32TLR_C_V1-0
+  
+  save_output_l2a_file: true
+  debug: false
+  #~ additional_maja_options: --perfos-log --perfos-report -l DEBUG
+  max_cloud_cover_acceptable_percent: 90.
+  remove_sre_bands: true
+  max_processing_time: 14400
+lis:
+  tree_cover_density: /input/tcd/TCD_32TLR.tif
+  water_mask: /input/euhydro_water_mask/eu_hydro_mask_20m_32TLR.tif
+  max_processing_time: 600
+ice:
+  generate_product: true
+  river_shapefile: /input/euhydro_river_shapefile/euhydrorivers_32TLR.shp
+  hrl_flags_file: /input/HRL_FLAGS/32TLR/hrl_qc_flags_32TLR.tif
+  max_processing_time: 600
+#~ ice:
+  #~ generate_product: false
+  #~ river_shapefile: 
+  #~ hrl_flags_file: 
+  #~ max_processing_time: 600

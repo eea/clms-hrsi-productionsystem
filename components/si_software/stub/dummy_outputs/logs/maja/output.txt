@@ -1,0 +1,660 @@
+2019-09-06T13:31:04.687819 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] MAJA Software Version : 3.3.0
+
+2019-09-06T13:31:04.742222 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Overloads the conf value in the command line by 'temp_20190906T133104U140517/maja/userconf'.
+
+2019-09-06T13:31:04.771241 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Overloads the NbThreads value in the command line by '2'.
+
+2019-09-06T13:31:04.771406 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] -------------------------------------------------------------------------
+
+2019-09-06T13:31:04.771598 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Configuration User System parameters:
+
+2019-09-06T13:31:04.771755 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]     *      L2Note                                          : L2 note
+
+2019-09-06T13:31:04.771930 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]     *      L3Note                                          : L3 note
+
+2019-09-06T13:31:04.772145 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]     *      CheckToolsNote                                  : Checktool note
+
+2019-09-06T13:31:04.772356 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]     *      NbThreads                                       : 2
+
+2019-09-06T13:31:04.772496 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]     *      EnableCleaningTemporaryDirectory                : true
+
+2019-09-06T13:31:04.772658 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]     *      EnableCachingConvertReflectanceData             : true
+
+2019-09-06T13:31:04.772802 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]     *      EnableCleaningCachingDirectoryBeforeProcessing  : false
+
+2019-09-06T13:31:04.772943 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]     *      EnableCleaningCachingDirectoryAfterProcessing   : true
+
+2019-09-06T13:31:04.773085 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]     *      EnableL2ResolutionProcessing                    : true
+
+2019-09-06T13:31:04.773228 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]     *      PreProcessingCleanInputZipFiles                 : false
+
+2019-09-06T13:31:04.773369 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]     *      PostProcessingZipFiles                          : false
+
+2019-09-06T13:31:04.773558 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]     *      PostProcessingCleanFiles                        : false
+
+2019-09-06T13:31:04.773797 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]     *      CheckXMLFilesWithSchema                         : false
+
+2019-09-06T13:31:04.774034 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] -------------------------------------------------------------------------
+
+2019-09-06T13:31:04.774200 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Using default Admin configuration system file.
+
+2019-09-06T13:31:04.780003 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] -------------------------------------------------------------------------
+
+2019-09-06T13:31:04.780209 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Configuration Admin System parameters:
+
+2019-09-06T13:31:04.780439 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]     *      System                                          : MAJA
+
+2019-09-06T13:31:04.780678 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]     *      Tolerances / Footprint / Coordinate             : 1e-06
+
+2019-09-06T13:31:04.780841 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]     *           ''          ''    / Direction              : 1e-06
+
+2019-09-06T13:31:04.781027 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]     *      EnablePerformanceMeasureAlgorithms              : false
+
+2019-09-06T13:31:04.781251 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] -------------------------------------------------------------------------
+
+2019-09-06T13:31:04.781509 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] ******************************************************************************
+
+2019-09-06T13:31:04.781683 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Application information: 
+
+2019-09-06T13:31:04.781896 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]     *      Processor Name               : MAJA_L2_NOMINAL_CHAIN
+
+2019-09-06T13:31:04.782084 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]     *      Test mode                    : false
+
+2019-09-06T13:31:04.782267 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]     *      UserConfigSystemFilename     : temp_20190906T133104U140517/maja/out/.maja-working-directory/MAJAUserConfigSystem.xml
+
+2019-09-06T13:31:04.782453 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]     *      AdminConfigSystemFileName    : temp_20190906T133104U140517/maja/out/.maja-working-directory/MAJAAdminConfigSystem.xml
+
+2019-09-06T13:31:04.782688 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]     *      Specifics command line parameters:
+
+2019-09-06T13:31:04.782875 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]           - TileId: 32TLR
+
+2019-09-06T13:31:04.783068 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] ******************************************************************************
+
+2019-09-06T13:31:04.783286 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] The process uses 2 thread(s). Note: possible to use of maximum 128 threads.
+
+2019-09-06T13:31:04.783678 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Starting L2NominalProcessor::PreProcessing() ...
+
+2019-09-06T13:31:04.830535 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] The L1 product found is <temp_20190906T133104U140517/maja/in/S2A_MSIL1C_20180614T103021_N0206_R108_T32TLR_20180614T124154.SAFE/MTD_MSIL1C.xml>.
+
+2019-09-06T13:31:04.844638 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Initialize the Plugin instance detected with the Plugin Name 'SENTINEL2_TM' ...
+
+2019-09-06T13:31:04.851109 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] The number of streaming lines of buffer for reading/writing images is '800'.
+
+2019-09-06T13:31:04.851341 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Using default Admin configuration camera file.
+
+2019-09-06T13:31:04.864677 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [P] -----------------------------------------------------------------------------------------------
+
+2019-09-06T13:31:04.864910 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [P] Starting L2Processor::PreProcessing() ...
+
+2019-09-06T13:31:04.865202 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] List of the 1 satellite(s) activated :
+
+2019-09-06T13:31:04.865478 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]  - SENTINEL-2A ('common' satellite SENTINEL-2_ and plugin SENTINEL2_TM)
+
+2019-09-06T13:31:04.865719 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Starting reading and checking input data common for each plugin activated...
+
+2019-09-06T13:31:04.865925 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] According to the input data, there is(are) 1 plugin(s) activated:
+
+2019-09-06T13:31:04.866139 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]  - SENTINEL2_TM
+
+2019-09-06T13:31:04.870759 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Starting DEM reading data for the 'unique' (common) satellite 'SENTINEL-2_' ...
+
+2019-09-06T13:31:04.870960 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] UnCompress the DBL product <temp_20190906T133104U140517/maja/in/S2__TEST_AUX_REFDE2_T32TLR_0001.DBL> ...
+
+2019-09-06T13:31:04.871251 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] The DBL product <temp_20190906T133104U140517/maja/in/S2__TEST_AUX_REFDE2_T32TLR_0001.DBL> is already uncompressed (.DBL.DIR directory already exists).
+
+2019-09-06T13:31:04.871860 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] l_NumberOfL2Resolution : 2
+
+2019-09-06T13:31:04.872041 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Starting DTM reading ...
+
+2019-09-06T13:31:04.901763 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] UnCompress the DBL product <temp_20190906T133104U140517/maja/in/S2__TEST_AUX_REFDE2_T32TLR_0001.DBL> ...
+
+2019-09-06T13:31:04.902046 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] The DBL product <temp_20190906T133104U140517/maja/in/S2__TEST_AUX_REFDE2_T32TLR_0001.DBL> is already uncompressed (.DBL.DIR directory already exists).
+
+2019-09-06T13:31:04.902686 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Starting DTM reading (nb resolutions=2) ...
+
+2019-09-06T13:31:11.149374 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] In the input data directory, there is(are) 0 meteo filename (EXO_METDTA).
+
+2019-09-06T13:31:11.150280 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] In the input data directory, there is(are) 0 cams filename (EXO_CAMS).
+
+2019-09-06T13:31:11.150506 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Starting reading and checking input data for all satellites activated...
+
+2019-09-06T13:31:11.151001 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Initialize the Plugin instance detected with the Plugin Name 'SENTINEL2_TM' ...
+
+2019-09-06T13:31:11.155149 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] The number of streaming lines of buffer for reading/writing images is '800'.
+
+2019-09-06T13:31:11.155378 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Using default Admin configuration camera file.
+
+2019-09-06T13:31:11.159349 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Starting reading data for the satellite 'SENTINEL-2A' and the plugin used is 'SENTINEL2_TM' ...
+
+2019-09-06T13:31:11.159592 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [P] Starting GIP_L2SMAC reading ...
+
+2019-09-06T13:31:11.161344 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [P] Starting GIP_L2TOCR reading ...
+
+2019-09-06T13:31:11.162335 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] UnCompress the DBL product <temp_20190906T133104U140517/maja/in/S2A_TEST_GIP_L2TOCR_L_CONTINEN_10005_20150703_21000101.DBL> ...
+
+2019-09-06T13:31:11.162612 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] The DBL product <temp_20190906T133104U140517/maja/in/S2A_TEST_GIP_L2TOCR_L_CONTINEN_10005_20150703_21000101.DBL> is already uncompressed (.DBL.DIR directory already exists).
+
+2019-09-06T13:31:11.164421 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [P] Starting GIP_L2WATV reading ...
+
+2019-09-06T13:31:11.165388 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] UnCompress the DBL product <temp_20190906T133104U140517/maja/in/S2A_TEST_GIP_L2WATV_L_CONTINEN_10006_20150703_21000101.DBL> ...
+
+2019-09-06T13:31:11.165648 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] The DBL product <temp_20190906T133104U140517/maja/in/S2A_TEST_GIP_L2WATV_L_CONTINEN_10006_20150703_21000101.DBL> is already uncompressed (.DBL.DIR directory already exists).
+
+2019-09-06T13:31:11.166151 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Allocating LookUpTable image dimension = 3
+
+2019-09-06T13:31:11.168172 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [P] Starting GIP_L2DIRT uncompressing ...
+
+2019-09-06T13:31:11.169183 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] UnCompress the DBL product <temp_20190906T133104U140517/maja/in/S2A_TEST_GIP_L2DIRT_L_CONTINEN_10005_20150703_21000101.DBL> ...
+
+2019-09-06T13:31:11.169449 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] The DBL product <temp_20190906T133104U140517/maja/in/S2A_TEST_GIP_L2DIRT_L_CONTINEN_10005_20150703_21000101.DBL> is already uncompressed (.DBL.DIR directory already exists).
+
+2019-09-06T13:31:11.169733 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [P] Starting GIP_L2DIFT uncompressing ...
+
+2019-09-06T13:31:11.170774 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] UnCompress the DBL product <temp_20190906T133104U140517/maja/in/S2A_TEST_GIP_L2DIFT_L_CONTINEN_10005_20150703_21000101.DBL> ...
+
+2019-09-06T13:31:11.171042 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] The DBL product <temp_20190906T133104U140517/maja/in/S2A_TEST_GIP_L2DIFT_L_CONTINEN_10005_20150703_21000101.DBL> is already uncompressed (.DBL.DIR directory already exists).
+
+2019-09-06T13:31:11.171316 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [P] Starting GIP_L2ALBD uncompressing ...
+
+2019-09-06T13:31:11.172329 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] UnCompress the DBL product <temp_20190906T133104U140517/maja/in/S2A_TEST_GIP_L2ALBD_L_CONTINEN_10005_20150703_21000101.DBL> ...
+
+2019-09-06T13:31:11.172596 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] The DBL product <temp_20190906T133104U140517/maja/in/S2A_TEST_GIP_L2ALBD_L_CONTINEN_10005_20150703_21000101.DBL> is already uncompressed (.DBL.DIR directory already exists).
+
+2019-09-06T13:31:11.172917 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [P] Starting GIP_L2DIRT reading ...
+
+2019-09-06T13:31:11.195359 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [P] Starting GIP_L2DIFT reading ...
+
+2019-09-06T13:31:11.210627 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [P] Starting GIP_L2ALBD reading ...
+
+2019-09-06T13:31:11.225178 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [P] Starting GIP_L2TOCR reading ...
+
+2019-09-06T13:31:11.629585 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [P] Starting L2Processor::PreProcessing() done.
+
+2019-09-06T13:31:11.629967 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] L2NominalProcessor::PreProcessing() done.
+
+2019-09-06T13:31:11.630452 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Starting L2NominalProcessor::ScientificProcessing() ...
+
+2019-09-06T13:31:11.633087 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] The GIP_L2SITE file detected for the satellite 'SENTINEL-2_' is  <temp_20190906T133104U140517/maja/in/S2__TEST_GIP_L2SITE_S_31TJF____10001_00000000_99999999.EEF>.
+
+2019-09-06T13:31:11.640694 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Start Sentinel2 L1 ImageFileReader ...
+
+l_NbBandTOA : 13
+
+2019-09-06T13:35:36.662672 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] The L2 product found is <temp_20190906T133104U140517/maja/in/SENTINEL2A_20180604-103550-770_L2A_T32TLR_C_V1-0/SENTINEL2A_20180604-103550-770_L2A_T32TLR_C_V1-0_MTD_ALL.xml>.
+
+2019-09-06T13:35:36.946112 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] The 'UseDefaultConstantOzoneAmount' is set to 'true'  (from the 'UserConfig_CAMERA' file).
+
+2019-09-06T13:35:37.148729 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] The 'OzoneAmount' used is '0.3'.
+
+2019-09-06T13:35:37.750169 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Starting from L2InitProcessor, the main ScientificSingleProductProcessing() method...
+
+2019-09-06T13:35:37.901071 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [P] -----------------------------------------------------------------------------------------------
+
+2019-09-06T13:35:37.902037 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [P] Starting Scientifics processing with...
+
+2019-09-06T13:35:37.902786 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [P]        *  INIT MODE                        = false
+
+2019-09-06T13:35:38.315915 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [P]        *  BACKWARD MODE                    = false
+
+2019-09-06T13:35:38.317084 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [P] -----------------------------------------------------------------------------------------------
+
+2019-09-06T13:35:38.319344 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [P] L1 Product : Date 20180614
+
+2019-09-06T13:35:38.548384 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [P] L1 Product : Filename MTD_MSIL1C.xml
+
+2019-09-06T13:35:38.558082 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [P] -----------------------------------------------------------------------------------------------
+
+2019-09-06T13:35:38.794989 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] The '--output' directory is <temp_20190906T133104U140517/maja/out>.
+
+2019-09-06T13:35:38.799091 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Load the Gipp L2COMM <S2A_TEST_GIP_L2COMM_L_ALLSITES_10009_20150703_21000101.EEF> (locate in the directory <temp_20190906T133104U140517/maja/in>) ...
+
+2019-09-06T13:35:39.338805 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Load the Gipp L2SITE <S2__TEST_GIP_L2SITE_S_31TJF____10001_00000000_99999999.EEF> (locate in the directory <temp_20190906T133104U140517/maja/in>) ...
+
+2019-09-06T13:35:39.340880 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] AOT Estimation : SPECTROTEMPORAL method
+
+2019-09-06T13:35:39.521164 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] The parameters used to select the bands used for the 'reflectances' composite image are:
+
+2019-09-06T13:35:39.521610 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]      From 'Bands_Definition/Thematic_Definition' node: 
+
+2019-09-06T13:35:39.522139 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]      -  Blue_Band_Code        =  B1
+
+2019-09-06T13:35:39.522656 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]      -  Red_Band_Code         =  B4
+
+2019-09-06T13:35:39.523077 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]      -  NIR_Band_Code         =  B8A
+
+2019-09-06T13:35:39.523497 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]      From 'Cloud_Masking' node: 
+
+2019-09-06T13:35:39.523993 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]      -  Correl_Band_Code      =  B4
+
+2019-09-06T13:35:39.524407 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]      -  Shadow_Band_Code      =  B4
+
+2019-09-06T13:35:39.524756 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]      From 'Rain_Flag' node: 
+
+2019-09-06T13:35:39.525097 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]      -  Water_Band_Code       =  B12
+
+2019-09-06T13:35:39.525452 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]      From 'AOT_Estimation' node: 
+
+2019-09-06T13:35:39.525794 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]      -  Dark_Band_Code        =  B1
+
+2019-09-06T13:35:39.526130 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]      From 'AOT_Estimation/Multi_Temporal_Method' node: 
+
+2019-09-06T13:35:39.526460 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]      -  Var_Band_Code      =  B8A
+
+2019-09-06T13:35:39.526775 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]      -  MT_AOT_Band_Code [0] = B1
+
+2019-09-06T13:35:39.527079 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] The parameters used to select the bands used for the 'LTC' composite image are:
+
+2019-09-06T13:35:39.527412 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]      From 'AOT_Estimation/Multi_Temporal_Method' node: 
+
+2019-09-06T13:35:39.527742 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]      -  MT_AOT_Band_Code [0] = B1
+
+2019-09-06T13:35:39.528166 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] The bands selected for the 'reflectances' composite image of the current product (date D) are (nb=4):
+
+2019-09-06T13:35:39.528452 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]      band [0] : BandCode = 'B1' and theoretical wavelength = '443' (Index in L2Coarse = '0')
+
+2019-09-06T13:35:39.528779 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]      band [1] : BandCode = 'B4' and theoretical wavelength = '665' (Index in L2Coarse = '3')
+
+2019-09-06T13:35:39.529084 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]      band [2] : BandCode = 'B8A' and theoretical wavelength = '865' (Index in L2Coarse = '8')
+
+2019-09-06T13:35:39.529385 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]      band [3] : BandCode = 'B12' and theoretical wavelength = '2200' (Index in L2Coarse = '12')
+
+2019-09-06T13:35:39.529688 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] The bands selected for the 'LTC' composite image of the current product (date D) are (nb=1):
+
+2019-09-06T13:35:39.529993 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]      band [0] : BandCode = 'B1' and theoretical wavelength = '443' (Index in L2Coarse = '0')
+
+2019-09-06T13:35:39.530330 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] The bands selected for the 'reflectances' composite image of the product (date D-1) [filename temp_20190906T133104U140517/maja/in/SENTINEL2A_20180604-103550-770_L2A_T32TLR_C_V1-0/SENTINEL2A_20180604-103550-770_L2A_T32TLR_C_V1-0_MTD_ALL.xml] are (nb=4):
+
+2019-09-06T13:35:39.530635 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]      band [0] : theoretical wavelength = '443'
+
+2019-09-06T13:35:39.530995 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]      band [1] : theoretical wavelength = '665'
+
+2019-09-06T13:35:39.531362 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]      band [2] : theoretical wavelength = '865'
+
+2019-09-06T13:35:39.531704 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]      band [3] : theoretical wavelength = '2200'
+
+2019-09-06T13:35:39.532047 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] The bands selected for the 'LTC' composite image of the product (date D-1) are (nb=1):
+
+2019-09-06T13:35:39.532396 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]      band [0] : theoretical wavelength = '443'
+
+2019-09-06T13:35:39.551699 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Check the validity of L2_in product...
+
+2019-09-06T13:35:39.561970 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Compute IPEDGCount...
+
+2019-09-06T13:35:39.563852 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Compute IPEDGCount done (time is 1.4 MS).
+
+2019-09-06T13:35:39.564226 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] 'DTMProcessing' processing ...
+
+2019-09-06T13:35:39.564802 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Wiring the 'DTMProcessing' processing...
+
+2019-09-06T13:35:39.569691 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Wiring the 'DTMProcessing' processing done (time is 4.4 MS).
+
+2019-09-06T13:35:39.570139 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] 'DTMProcessing' processing done.
+
+2019-09-06T13:35:39.570842 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] 'Atmospheric absorption correction' processing ...
+
+2019-09-06T13:35:39.571415 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Ozone amount value: 0.3
+
+2019-09-06T13:35:39.572042 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Allocating LookUpTable image dimension = 1
+
+2019-09-06T13:35:39.572464 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Wiring the 'Atmospheric absorption correction' processing...
+
+2019-09-06T13:35:39.577177 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Wiring the 'Atmospheric absorption correction' processing done (time is 4.1 MS).
+
+2019-09-06T13:35:40.629509 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] 'Atmospheric absorption correction' at L2 Coarse Resolution processing done.
+
+2019-09-06T13:35:40.630086 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] CAMS data not requested
+
+2019-09-06T13:35:40.750753 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] 'Rayleigh correction' processing ...
+
+2019-09-06T13:35:42.661250 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] 'Rayleigh correction' processing done.
+
+2019-09-06T13:35:42.661654 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] 'Geometric Flags' processing ...
+
+2019-09-06T13:35:42.662269 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Compute the SunglintFlag...
+
+2019-09-06T13:35:42.662765 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Compute the SunglintFlag done (time is 0.015 MS).
+
+2019-09-06T13:35:42.663158 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Compute the HotSpotFlag...
+
+2019-09-06T13:35:42.663606 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Compute the HotSpotFlag done (time is 0.0091 MS).
+
+2019-09-06T13:35:42.663992 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] 'Geometric Flags' processing done.
+
+2019-09-06T13:35:42.828513 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] 'Cirrus Mask' processing.
+
+2019-09-06T13:35:42.856136 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Compute Cirrus Flag...
+
+2019-09-06T13:35:42.856647 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Compute Cirrus Flag done (time is 0.0019 MS).
+
+2019-09-06T13:35:42.857650 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] 'Cirrus Mask' processing done.
+
+2019-09-06T13:35:42.858323 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] 'Snow Masking' processing ...
+
+2019-09-06T13:35:42.859014 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Wiring the 'Snow Masking' processing...
+
+2019-09-06T13:35:42.859774 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Wiring the 'Snow Masking' processing done (time is 0.11 MS).
+
+2019-09-06T13:35:42.860320 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] 'Snow Masking' processing done.
+
+2019-09-06T13:35:42.887292 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] 'Cloud Masking' processing ...
+
+2019-09-06T13:35:42.887898 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Wiring the 'Cloud Masking' processing...
+
+2019-09-06T13:35:45.305573 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Launch the Snow mask correction processing...
+
+2019-09-06T13:35:46.598596 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Launch the Snow mask correction processing done (time is 1.3 second).
+
+2019-09-06T13:35:47.253518 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] CloudMasking: StereoCorrection Compute label statistics...
+
+2019-09-06T13:35:47.263072 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] CloudMasking: StereoCorrection Compute label statistics done (time is 9 MS).
+
+2019-09-06T13:35:47.333568 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] CloudMasking: StereoCorrection Compute label statistics after changing value...
+
+2019-09-06T13:35:47.338395 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] CloudMasking: StereoCorrection Compute label statistics after changing value done (time is 4.3 MS).
+
+2019-09-06T13:35:58.358429 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Wiring the 'Cloud Masking' processing done (time is 15 second).
+
+2019-09-06T13:35:58.656846 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] 'Cloud Masking' processing done.
+
+2019-09-06T13:35:58.659423 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [W] Cloud percentage computed is 46; the maximum cloud percentage threshold authorized is 90.
+
+2019-09-06T13:35:58.659804 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] 'Water Masking' processing ...
+
+2019-09-06T13:36:11.277939 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] 'Water Masking' processing done.
+
+2019-09-06T13:36:11.278416 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] 'Rain Detection' processing ...
+
+2019-09-06T13:36:11.279010 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Wiring the 'Rain Detection' processing...
+
+2019-09-06T13:36:11.279431 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Wiring the 'Rain Detection' processing done (time is 0.006 MS).
+
+2019-09-06T13:36:11.279818 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] 'Rain Detection' processing done.
+
+2019-09-06T13:36:11.292623 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [W] Snow percentage computed is 18
+
+2019-09-06T13:36:11.292994 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] 'AOT Estimation' processing ...
+
+2019-09-06T13:36:11.294571 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Wiring the 'AOT Estimation' processing...
+
+2019-09-06T13:36:44.978161 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Wiring the 'AOT Estimation' processing done (time is 34 second).
+
+2019-09-06T13:36:44.978678 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] 'AOT Estimation' done.
+
+2019-09-06T13:36:44.979234 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] 'Cirrus correction' processing ...
+
+2019-09-06T13:36:44.979755 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] 'Cirrus correction' processing ...
+
+2019-09-06T13:36:44.980356 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Wiring the 'Cirrus Correction' processing...
+
+2019-09-06T13:42:49.572379 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Wiring the 'Cirrus Correction' processing done (time is 6.1 minutes).
+
+2019-09-06T13:42:49.573409 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] 'Scattering correction' processing ...
+
+2019-09-06T13:42:49.574230 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Wiring the 'Scattering correction' processing...
+
+2019-09-06T13:42:49.589033 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Wiring the 'Scattering correction' processing done (time is 14 MS).
+
+2019-09-06T13:42:51.325048 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] 'Scattering correction' at L2 Coarse Resolution processing done.
+
+2019-09-06T13:42:51.325649 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] 'Composite Image' processing ...
+
+2019-09-06T13:42:51.326475 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Wiring the 'Composite Image' processing...
+
+2019-09-06T13:42:52.006546 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Wiring the 'Composite Image' processing done (time is 6.8e+02 MS).
+
+2019-09-06T13:42:52.007076 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] 'Composite Image' processing done.
+
+2019-09-06T13:42:52.007779 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] 'Environment correction' processing ...
+
+2019-09-06T13:42:52.008616 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Wiring the 'Environment correction' processing...
+
+2019-09-06T13:51:48.768228 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Wiring the 'Environment correction' processing done (time is 8.9 minutes).
+
+2019-09-06T13:51:48.770185 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] 'Environment correction' processing done.
+
+2019-09-06T13:51:48.770869 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] 'Slope correction' processing ...
+
+2019-09-06T13:51:48.771500 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Wiring the slope correction processing...
+
+2019-09-06T13:51:48.813691 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Wiring the slope correction processing done (time is 42 MS).
+
+2019-09-06T13:51:48.814201 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] 'Slope correction' processing done.
+
+2019-09-06T13:51:49.045236 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing L2 Images files into the output L2 product...
+
+2019-09-06T13:51:49.048573 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the PXD image file...
+
+2019-09-06T13:51:49.445605 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the PXD image file done (time is 4e+02 MS).
+
+2019-09-06T13:51:49.449611 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the WAM image file...
+
+2019-09-06T13:51:49.819497 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the WAM image file done (time is 3.7e+02 MS).
+
+2019-09-06T13:51:49.819962 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the STO image file...
+
+2019-09-06T13:51:50.324944 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the STO image file done (time is 5e+02 MS).
+
+2019-09-06T13:51:50.325247 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the NDT image file...
+
+2019-09-06T13:51:50.709779 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the NDT image file done (time is 3.8e+02 MS).
+
+2019-09-06T13:51:50.709913 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the LTC LookUpTable image file...
+
+2019-09-06T13:51:50.711493 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the LTC LookUpTable image file done (time is 0.98 MS).
+
+2019-09-06T13:51:50.712333 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the RTA image file...
+
+2019-09-06T13:51:51.198008 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the RTA image file done (time is 4.9e+02 MS).
+
+2019-09-06T13:51:51.198404 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the RTC image file...
+
+2019-09-06T13:51:51.658050 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the RTC image file done (time is 4.6e+02 MS).
+
+2019-09-06T13:51:51.658433 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the RCR image file...
+
+2019-09-06T13:51:52.137202 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the RCR image file done (time is 4.8e+02 MS).
+
+2019-09-06T13:51:52.139013 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the CLD image file...
+
+2019-09-06T13:51:52.270428 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the CLD image file done (time is 1.3e+02 MS).
+
+2019-09-06T13:51:52.270870 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] SRE and FRE values multiply by the reflectance quantification value 10000.
+
+2019-09-06T13:52:03.955724 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the SRE B2 image file...
+
+2019-09-06T13:52:16.558440 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the SRE B2 image file done (time is 13 second).
+
+2019-09-06T13:52:16.558633 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the SRE B3 image file...
+
+2019-09-06T13:52:29.712959 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the SRE B3 image file done (time is 13 second).
+
+2019-09-06T13:52:29.713154 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the SRE B4 image file...
+
+2019-09-06T13:52:41.474187 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the SRE B4 image file done (time is 12 second).
+
+2019-09-06T13:52:41.474509 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the SRE B8 image file...
+
+2019-09-06T13:52:53.268828 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the SRE B8 image file done (time is 12 second).
+
+2019-09-06T13:54:48.797916 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the FRE B2 image file...
+
+2019-09-06T13:55:00.127245 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the FRE B2 image file done (time is 11 second).
+
+2019-09-06T13:55:00.127434 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the FRE B3 image file...
+
+2019-09-06T13:55:11.597270 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the FRE B3 image file done (time is 11 second).
+
+2019-09-06T13:55:11.597463 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the FRE B4 image file...
+
+2019-09-06T13:55:22.592374 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the FRE B4 image file done (time is 11 second).
+
+2019-09-06T13:55:22.592566 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the FRE B8 image file...
+
+2019-09-06T13:55:34.121904 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the FRE B8 image file done (time is 12 second).
+
+2019-09-06T13:55:34.123768 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the ATB image file...
+
+2019-09-06T13:55:46.981240 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the ATB image file done (time is 13 second).
+
+2019-09-06T13:55:46.981707 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the IAB image file...
+
+2019-09-06T13:55:59.121577 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the IAB image file done (time is 12 second).
+
+2019-09-06T13:55:59.123523 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the MG2 image file...
+
+2019-09-06T13:57:13.448243 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the MG2 image file done (time is 1.2 minutes).
+
+2019-09-06T13:57:13.448719 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the SAT image file...
+
+2019-09-06T13:57:18.602449 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the SAT image file done (time is 5.2 second).
+
+2019-09-06T13:57:18.602649 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [W] ATTENTION: XMLFileHandler::GetSingleNode: Impossible to read the XPath <//Mask_List/Mask/Mask_Properties/NATURE[.='Aberrant_Pixels']> from the Xml filename <temp_20190906T133104U140517/maja/in/S2A_MSIL1C_20180614T103021_N0206_R108_T32TLR_20180614T124154.SAFE/MTD_MSIL1C.xml> !
+
+2019-09-06T13:57:18.603257 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [W] ATTENTION: XMLFileHandler::GetSingleNode: Impossible to read the XPath <//Mask_List/Mask/Mask_Properties/NATURE[.='Useful_Image']> from the Xml filename <temp_20190906T133104U140517/maja/in/S2A_MSIL1C_20180614T103021_N0206_R108_T32TLR_20180614T124154.SAFE/MTD_MSIL1C.xml> !
+
+2019-09-06T13:57:18.604135 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the EDG image file...
+
+2019-09-06T13:57:21.172451 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the EDG image file done (time is 2.6 second).
+
+2019-09-06T13:57:21.173148 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the CLM image file...
+
+2019-09-06T13:57:43.904173 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the CLM image file done (time is 23 second).
+
+2019-09-06T13:57:43.904695 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] SRE and FRE values multiply by the reflectance quantification value 10000.
+
+2019-09-06T13:57:55.699398 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the SRE B5 image file...
+
+2019-09-06T13:57:59.509190 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the SRE B5 image file done (time is 3.8 second).
+
+2019-09-06T13:57:59.509377 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the SRE B6 image file...
+
+2019-09-06T13:58:03.474649 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the SRE B6 image file done (time is 4 second).
+
+2019-09-06T13:58:03.474884 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the SRE B7 image file...
+
+2019-09-06T13:58:07.492794 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the SRE B7 image file done (time is 4 second).
+
+2019-09-06T13:58:07.492986 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the SRE B8A image file...
+
+2019-09-06T13:58:11.364364 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the SRE B8A image file done (time is 3.9 second).
+
+2019-09-06T13:58:11.364552 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the SRE B11 image file...
+
+2019-09-06T13:58:15.274179 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the SRE B11 image file done (time is 3.9 second).
+
+2019-09-06T13:58:15.274365 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the SRE B12 image file...
+
+2019-09-06T13:58:19.214133 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the SRE B12 image file done (time is 3.9 second).
+
+2019-09-06T13:58:51.714996 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the FRE B5 image file...
+
+2019-09-06T13:58:55.776391 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the FRE B5 image file done (time is 4.1 second).
+
+2019-09-06T13:58:55.776637 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the FRE B6 image file...
+
+2019-09-06T13:58:59.752434 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the FRE B6 image file done (time is 4 second).
+
+2019-09-06T13:58:59.752625 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the FRE B7 image file...
+
+2019-09-06T13:59:03.774859 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the FRE B7 image file done (time is 4 second).
+
+2019-09-06T13:59:03.775157 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the FRE B8A image file...
+
+2019-09-06T13:59:07.687286 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the FRE B8A image file done (time is 3.9 second).
+
+2019-09-06T13:59:07.687472 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the FRE B11 image file...
+
+2019-09-06T13:59:11.557889 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the FRE B11 image file done (time is 3.9 second).
+
+2019-09-06T13:59:11.558072 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the FRE B12 image file...
+
+2019-09-06T13:59:15.386900 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the FRE B12 image file done (time is 3.8 second).
+
+2019-09-06T13:59:15.389310 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the ATB image file...
+
+2019-09-06T13:59:22.730487 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the ATB image file done (time is 7.3 second).
+
+2019-09-06T13:59:22.730947 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the IAB image file...
+
+2019-09-06T13:59:30.349127 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the IAB image file done (time is 7.6 second).
+
+2019-09-06T13:59:30.351075 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the MG2 image file...
+
+2019-09-06T13:59:57.537134 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the MG2 image file done (time is 27 second).
+
+2019-09-06T13:59:57.537676 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the SAT image file...
+
+2019-09-06T13:59:59.568676 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the SAT image file done (time is 2 second).
+
+2019-09-06T13:59:59.568795 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [W] ATTENTION: XMLFileHandler::GetSingleNode: Impossible to read the XPath <//Mask_List/Mask/Mask_Properties/NATURE[.='Aberrant_Pixels']> from the Xml filename <temp_20190906T133104U140517/maja/in/S2A_MSIL1C_20180614T103021_N0206_R108_T32TLR_20180614T124154.SAFE/MTD_MSIL1C.xml> !
+
+2019-09-06T13:59:59.569308 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [W] ATTENTION: XMLFileHandler::GetSingleNode: Impossible to read the XPath <//Mask_List/Mask/Mask_Properties/NATURE[.='Useful_Image']> from the Xml filename <temp_20190906T133104U140517/maja/in/S2A_MSIL1C_20180614T103021_N0206_R108_T32TLR_20180614T124154.SAFE/MTD_MSIL1C.xml> !
+
+2019-09-06T13:59:59.570158 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the EDG image file...
+
+2019-09-06T14:00:00.457360 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the EDG image file done (time is 8.9e+02 MS).
+
+2019-09-06T14:00:00.458010 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the CLM image file...
+
+2019-09-06T14:00:07.194453 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the CLM image file done (time is 6.7 second).
+
+2019-09-06T14:00:47.618678 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the QLK quicklook image file <temp_20190906T133104U140517/maja/out/SENTINEL2A_20180614-103021-462_L2A_T32TLR_C_V1-0/SENTINEL2A_20180614-103021-462_L2A_T32TLR_C_V1-0_QKL_ALL.jpg>...
+
+2019-09-06T14:00:47.788606 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing the QLK quicklook image file <temp_20190906T133104U140517/maja/out/SENTINEL2A_20180614-103021-462_L2A_T32TLR_C_V1-0/SENTINEL2A_20180614-103021-462_L2A_T32TLR_C_V1-0_QKL_ALL.jpg> done (time is 1.7e+02 MS).
+
+2019-09-06T14:00:47.801952 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing L2 Images files into the output L2 product done (time is 9 minutes).
+
+2019-09-06T14:00:47.830121 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Create the output L2 PUBLIC product directory <temp_20190906T133104U140517/maja/out/SENTINEL2A_20180614-103021-462_L2A_T32TLR_C_V1-0> already exist!
+
+2019-09-06T14:00:47.830565 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Create the output L2 DATA sub-directory <temp_20190906T133104U140517/maja/out/SENTINEL2A_20180614-103021-462_L2A_T32TLR_C_V1-0/DATA> already exist!
+
+2019-09-06T14:00:48.382162 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing L2 EarthExplorer headers files into the output L2 product...
+
+2019-09-06T14:00:48.446101 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [W] ATTENTION: XMLFileHandler::GetSingleNode: Impossible to read the XPath <//Mask_List/Mask[Mask_Properties/NATURE='Defective_Pixel']> from the Xml filename </install/maja_executable/share/config/SENTINEL2_TM/Templates/L2.product/MTD_ALL.xml> !
+
+2019-09-06T14:00:48.502176 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [W] ATTENTION: XMLFileHandler::GetSingleNode: Impossible to read the XPath <//Group_Geopositioning_List/Group_Geopositioning[@group_id='PAN']> from the Xml filename </install/maja_executable/share/config/SENTINEL2_TM/Templates/L2.product/MTD_ALL.xml> !
+
+2019-09-06T14:00:48.502756 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [W] ATTENTION: XMLFileHandler::GetSingleNode: Impossible to read the XPath <//Group_Geopositioning_List/Group_Geopositioning[@group_id='TH']> from the Xml filename </install/maja_executable/share/config/SENTINEL2_TM/Templates/L2.product/MTD_ALL.xml> !
+
+2019-09-06T14:00:48.510317 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing L2 EarthExplorer headers files into the output L2 product done (time is 1.3e+02 MS).
+
+2019-09-06T14:00:48.510766 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Starting Scientifics processing done.
+
+2019-09-06T14:00:48.641868 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] L2NominalProcessor::ScientificProcessing() done.
+
+2019-09-06T14:00:48.706688 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Starting L2NominalProcessor::PostProcessing() ...
+
+2019-09-06T14:00:48.707500 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [P] -----------------------------------------------------------------------------------------------
+
+2019-09-06T14:00:48.708240 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [P] Start L2Processor::PostProcessing ...
+
+2019-09-06T14:00:48.723003 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] According to the input data, there is(are) 1 satellite(s) activated :
+
+2019-09-06T14:00:48.723475 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I]  - SENTINEL2A (plugin SENTINEL2_TM)
+
+2019-09-06T14:00:48.725739 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] ChecktoolProcessor::PreProcessing() done.
+
+2019-09-06T14:00:48.726157 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [W] No L2 check tool processing detected: the 'extract points' and 'checktools' processing are disable.
+
+2019-09-06T14:00:48.737289 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] The '--output' directory is <temp_20190906T133104U140517/maja/out>.
+
+2019-09-06T14:00:48.737756 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] The product report filename is <temp_20190906T133104U140517/maja/out/S2A_OPER_PMC_L2REPT_32TLR____20180614.EEF>.
+
+2019-09-06T14:00:48.738257 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing L2 ProductionReport file...
+
+2019-09-06T14:00:48.738807 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Start the creation of the 'ProductionReport' (PMC_L2REPT) ...
+
+2019-09-06T14:00:48.746035 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Writing L2 ProductionReport file done (time is 7.2 MS).
+
+2019-09-06T14:00:48.746469 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] L2NominalProcessor::PostProcessing() done.
+
+2019-09-06T14:00:48.773873 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [P] Starting Unload data application handler ...
+
+2019-09-06T14:00:48.774498 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Cleans the caching directory <temp_20190906T133104U140517/maja/out/.maja-working-directory/caching>...
+
+2019-09-06T14:00:50.276215 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Cleans the caching directory (if not already deleted) <temp_20190906T133104U140517/maja/out/.maja-working-directory/caching>...
+
+2019-09-06T14:00:50.277055 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [P] Starting Unload data application handler done.
+
+2019-09-06T14:00:50.277533 c34c979dd82b maja-processing-3.3.0 3.3 [000000000028] [I] Process OK ;-)  [code return: 0]
+

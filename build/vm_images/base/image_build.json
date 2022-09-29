@@ -1,0 +1,34 @@
+{
+    "variables": {
+        "image_tag": "draft"
+    },
+    "builders": [
+        {
+            "type": "openstack",
+            "image_name": "csi-base-{{user `image_tag`}}",
+            "source_image": "602485f6-7dc1-4796-b3f2-71847e48f67b",
+            "flavor": "21",
+            "use_blockstorage_volume": true,
+            "ssh_ip_version": "4",
+            "security_groups": [
+                    "default",
+                    "allow_ping_ssh_rdp"
+            ],
+            "ssh_username": "eouser",
+            "networks": [
+                "{{user `network_id`}}"
+            ]
+        }
+    ],
+    "provisioners": [
+        {
+            "type": "file",
+            "source": "tmp/rclone.conf",
+            "destination": "/home/eouser/rclone.conf"
+        },
+        {
+            "script": "vm_setup.sh",
+            "type": "shell"
+        }
+    ]
+}

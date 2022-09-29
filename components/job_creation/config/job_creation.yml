@@ -1,0 +1,16 @@
+
+# Time in seconds between two requests to the DIAS for new products.
+sleep: 5
+
+# Log levels. 
+# The log level for the job creation is fixed.
+# The initial log level for the jobs can be modified later by the operator for e.g. debugging jobs.
+# Either CRITICAL, ERROR, WARNING, INFO, or DEBUG.
+job_creation_log_level: INFO
+job_log_level: INFO
+
+# Number of simultaneous parallel requests to the internal database to find existing input products
+internal_database_parallel_requests: 20
+
+# Number of simultaneous parallel requests to the DIAS to find new input products
+dias_parallel_requests: 1
