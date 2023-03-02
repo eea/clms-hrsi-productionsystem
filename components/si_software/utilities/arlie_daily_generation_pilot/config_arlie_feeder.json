@@ -1,0 +1,10 @@
+{
+   "LAST_USED_RLIE_T2": "None",
+   "LAST_USED_RLIE_TYPE": "None",
+   "LAST_USED_RLIE_JOB_ID": "None",
+   "START_MILESTONE": "2023-02-21",
+   "MAX_THROWBACK": 10,
+   "RLIE_USED_FOR_ARLIE_DIR": "/home/eouser/arlie_generation/daily_rlie_retrieval/",
+   "RLIE_DIR": "/home/eouser/arlie_generation/rlie_data",
+   "TEMP_DIR": "/home/eouser/arlie_generation/temp"
+} 
